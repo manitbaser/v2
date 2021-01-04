@@ -2,16 +2,8 @@ import React from "react";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 
-const GetInTouch = ({ gradient, heading, message, email }) => {
+const GetInTouch = ({ heading, message, email }) => {
   return (
-    <Jumbotron
-    id="home"
-    style={{
-      background: `linear-gradient(136deg,${gradient})`,
-      backgroundSize: "1200% 1200%",
-    }}
-    className="text-light"
-  >
   <Container className="text-center" >
     <>
       <h2 className="display-4 pb-3 text-center">{heading}</h2>
@@ -19,8 +11,17 @@ const GetInTouch = ({ gradient, heading, message, email }) => {
         {message} <a href={`mailto:${email}`}>{email}</a>.
       </p>
     </>
+    <i className="fas fa-code" /> with <i className="fas fa-heart" /> by{" "}
+        <a
+          className="badge badge-dark"
+          rel="noopener"
+          href="https://github.com/manitbaser"
+          aria-label="My GitHub"
+        >
+          Manit Baser
+        </a>{" "}
+        using <i className="fab fa-react" />
     </Container>
-    </Jumbotron>
   );
 };
 

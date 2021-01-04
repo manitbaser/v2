@@ -8,18 +8,6 @@ const Footer = (props) => {
     <footer style={bgStyle} className="mt-auto py-5 text-center ">
       <Container>
         {props.children}
-        <i className="fas fa-code" /> with <i className="fas fa-heart" /> by{" "}
-        <a
-          className="badge badge-dark"
-          rel="noopener"
-          href="https://github.com/manitbaser"
-          aria-label="My GitHub"
-        >
-          Manit Baser
-        </a>{" "}
-        using <i className="fab fa-react" />
-        <p>
-        </p>
       </Container>
     </footer>
   );
