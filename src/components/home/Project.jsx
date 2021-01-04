@@ -4,6 +4,7 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Row from "react-bootstrap/Row";
 import ProjectCard from "./ProjectCard";
 import axios from "axios";
+import Particles from "react-tsparticles";
 
 const dummyProject = {
   name: null,
@@ -55,9 +56,11 @@ const Project = ({ heading, username, length, specfic }) => {
   }, [fetchRepos]);
 
   return (
-    <Jumbotron fluid id="projects" className="bg-light m-0">
+  <div style={{position:'center', background:'#27c2b5',}}>
+  <div style={{position: 'absolute', left: 0, right: 0, alignItems: 'center',alignSelf: 'center'}}>
+  <Jumbotron fluid id="projects" className="bg-transparent m-0">
       <Container className="">
-        <h2 className="display-4 pb-5 text-center">{heading}</h2>
+        <h2 className="display-4 pb-5 text-center text-white">{heading}</h2>
         <Row>
           {projectsArray.length
             ? projectsArray.map((project, index) => (
@@ -77,6 +80,88 @@ const Project = ({ heading, username, length, specfic }) => {
         </Row>
       </Container>
     </Jumbotron>
+    </div>
+    <div style={{position:'center'}}>
+    <Jumbotron fluid id="projects" className="bg-transparent m-0">
+      <Particles
+          id="tsparticles"
+          options={{
+            fpsLimit: 60,
+            interactivity: {
+              detectsOn: "canvas",
+              events: {
+                onClick: {
+                  enable: true,
+                  mode: "push",
+                },
+                onHover: {
+                  enable: true,
+                  mode: "repulse",
+                },
+                resize: true,
+              },
+              modes: {
+                bubble: {
+                  distance: 400,
+                  duration: 2,
+                  opacity: 0.8,
+                  size: 40,
+                },
+                push: {
+                  quantity: 4,
+                },
+                repulse: {
+                  distance: 200,
+                  duration: 0.4,
+                },
+              },
+            },
+            particles: {
+              color: {
+                value: "#ffffff",
+              },
+              links: {
+                color: "#ffffff",
+                distance: 150,
+                enable: true,
+                opacity: 0.5,
+                width: 1,
+              },
+              collisions: {
+                enable: true,
+              },
+              move: {
+                direction: "none",
+                enable: true,
+                outMode: "bounce",
+                random: false,
+                speed: 6,
+                straight: false,
+              },
+              number: {
+                density: {
+                  enable: true,
+                  value_area: 800,
+                },
+                value: 80,
+              },
+              opacity: {
+                value: 0.5,
+              },
+              shape: {
+                type: "circle",
+              },
+              size: {
+                random: true,
+                value: 5,
+              },
+            },
+            detectRetina: true,
+          }}
+        />
+        </Jumbotron>
+    </div>
+  </div>
   );
 };
 

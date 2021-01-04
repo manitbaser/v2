@@ -55,6 +55,7 @@ function Skills({ heading, hardSkills, softSkills }) {
     </Jumbotron>
     </div>
     <div style={{position:'center'}}>
+    <Jumbotron ref={skillsTabRef} fluid className="bg-transparent text-light m-0" id="skills">
       <Particles
           id="tsparticles"
           options={{
@@ -131,6 +132,7 @@ function Skills({ heading, hardSkills, softSkills }) {
             detectRetina: true,
           }}
         />
+        </Jumbotron>
     </div>
   </div>
   );
