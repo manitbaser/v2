@@ -14,4 +14,3 @@
 
 [![Site preview](/public/social-image.png)](https://manitbaser.github.io/)
 <br><br>
-Originally forked from <a href="https://github.com/hashirshoaeb/home">Hashir Shoaeb</a>
