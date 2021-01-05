@@ -1,6 +1,7 @@
 // Navigation Bar SECTION
 const navBar = {
   show: true,
+  gradientColors: "#008192,#006492, #004e92, #053d6d, #022747, #000428, #00010c, #190638, #351a61, #563264, #804685, #a43bac, #c9318f, #c92f6f, #cb2d3e, #CB3066, #e96443, #ff9b11, #FFC371",
 };
 
 // Main Body SECTION
@@ -64,7 +65,7 @@ const repos = {
   heading: "Recent Projects",
   gitHubUsername: "manitbaser", //i.e."johnDoe12Gh"
   reposLength: 0,
-  specificRepos: ["CoviFight", "NNFL-Assignment-AlexNet", "Signed-Wallace-Multiplier", "Smart-Lighting-System-Proteus"],
+  specificRepos: ["CoviFight", "manitbaser.github.io", "NNFL-Assignment-AlexNet", "Bingo", "Signed-Wallace-Multiplier", "Smart-Lighting-System-Proteus"],
 };
 
 // Leadership SECTION
