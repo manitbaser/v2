@@ -5,7 +5,6 @@ import SkillsTab from "./SkillsTab";
 import Row from "react-bootstrap/Row";
 import { Jumbotron, Container } from "react-bootstrap";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
-import Particles from "react-tsparticles";
 
 function Skills({ heading, hardSkills, softSkills }) {
   const skillsTabRef = React.useRef();

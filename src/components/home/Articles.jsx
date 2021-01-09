@@ -2,10 +2,11 @@ import React, { useState, useEffect, useCallback } from "react";
 import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Row from "react-bootstrap/Row";
-import ProjectCard from "./ProjectCard";
+import ArticleCard from "./ArticleCard";
 import axios from "axios";
+import { Col } from "react-bootstrap";
 
-const dummyProject = {
+const dummyArticle = {
   name: null,
   description: null,
   svn_url: null,
@@ -13,15 +14,12 @@ const dummyProject = {
   languages_url: null,
   pushed_at: null,
 };
-const API = "https://api.github.com";
-// const gitHubQuery = "/repos?sort=updated&direction=desc";
-// const specficQuerry = "https://api.github.com/repos/manitbaser/";
+const API = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@manitbaser/";
 
-const Project = ({ heading, username, length, specfic }) => {
-  const allReposAPI = `${API}/users/${username}/repos?sort=updated&direction=desc`;
-  const specficReposAPI = `${API}/repos/${username}`;
-  const dummyProjectsArr = new Array(length + specfic.length).fill(
-    dummyProject
+const Articles = ({ heading, username }) => {
+  const allReposAPI = API
+  const dummyArticlesArr = new Array(allReposAPI.length).fill(
+    dummyArticle
   );
 
   const [projectsArray, setProjectsArray] = useState([]);
@@ -31,53 +29,45 @@ const Project = ({ heading, username, length, specfic }) => {
     try {
       // getting all repos
       const response = await axios.get(allReposAPI);
-      // slicing to the length
-      repoList = [...response.data.slice(0, length)];
-      // adding specified repos
-      try {
-        for (let repoName of specfic) {
-          const response = await axios.get(`${specficReposAPI}/${repoName}`);
-          repoList.push(response.data);
-        }
-      } catch (error) {
-        console.error(error.message);
-      }
+      repoList = [...response.data.items];
       // setting projectArray
       // TODO: remove the duplication.
       setProjectsArray(repoList);
     } catch (error) {
       console.error(error.message);
     }
-  }, [allReposAPI, length, specfic, specficReposAPI]);
+  }, [allReposAPI, allReposAPI.length]);
 
   useEffect(() => {
     fetchRepos();
   }, [fetchRepos]);
 
   return (
+      <div id="articles">
   <Jumbotron fluid id="projects" className="bg-transparent m-0">
-      <Container className="">
+      <div className="col-sm-6 mx-auto">
         <h2 className="display-4 pb-5 text-white text-center">{heading}</h2>
-        <Row>
+        {/* <Col className="text-center"> */}
           {projectsArray.length
             ? projectsArray.map((project, index) => (
-                <ProjectCard
+                <ArticleCard
                   key={`project-card-${index}`}
                   id={`project-card-${index}`}
                   value={project}
                 />
               ))
-            : dummyProjectsArr.map((project, index) => (
-                <ProjectCard
+            : dummyArticlesArr.map((project, index) => (
+                <ArticleCard
                   key={`dummy-${index}`}
                   id={`dummy-${index}`}
                   value={project}
                 />
               ))}
-        </Row>
-      </Container>
+        {/* </Col> */}
+      </div>
     </Jumbotron>
+    </div>
   );
 };
 
-export default Project;
+export default Articles;

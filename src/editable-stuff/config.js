@@ -68,28 +68,10 @@ const repos = {
   specificRepos: ["CoviFight", "manitbaser.github.io", "NNFL-Assignment-AlexNet", "Bingo", "Signed-Wallace-Multiplier", "Smart-Lighting-System-Proteus"],
 };
 
-// Leadership SECTION
-const leadership = {
-  show: false,
-  heading: "Leadership",
-  message:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
-  images: [
-    {
-      img: require("../editable-stuff/manitbaser.png"),
-      label: "First slide label",
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum."
-    },
-    {
-      img: require("../editable-stuff/manitbaser.png"),
-      label: "Second slide label",
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum."
-    },
-  ],
-  imageSize: {
-    width:"615",
-    height:"450"
-  }
+const articles = {
+  show: true,
+  heading: "Articles",
+  username: "manitbaser",
 };
 
 // SKILLS SECTION
@@ -111,16 +93,16 @@ const skills = {
     // { name: "HTML/CSS", value: 60 },
     // { name: "C#", value: 80 },
   ],
-  softSkills: [
-    { name: "Goal-Oriented", value: 80 },
-    { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 75 },
-    { name: "Adaptability", value: 85 },
-    { name: "Problem Solving", value: 75 },
-    { name: "Empathy", value: 90 },
-    { name: "Organization", value: 70 },
-    { name: "Creativity", value: 90 },
-  ],
+  // softSkills: [
+  //   { name: "Goal-Oriented", value: 80 },
+  //   { name: "Collaboration", value: 90 },
+  //   { name: "Positivity", value: 75 },
+  //   { name: "Adaptability", value: 85 },
+  //   { name: "Problem Solving", value: 75 },
+  //   { name: "Empathy", value: 90 },
+  //   { name: "Organization", value: 70 },
+  //   { name: "Creativity", value: 90 },
+  // ],
 };
 
 // GET IN TOUCH SECTION
@@ -130,7 +112,6 @@ const getInTouch = {
   message:
     "Please feel free to email me at",
   email: "manitb06@gmail.com",
-  gradientColors: "#008192,#006492, #004e92, #053d6d, #022747, #000428, #00010c, #190638, #351a61, #563264, #804685, #a43bac, #c9318f, #c92f6f, #cb2d3e, #CB3066, #e96443, #ff9b11, #FFC371",
 };
 
 // // Blog SECTION
@@ -138,4 +119,4 @@ const getInTouch = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch };
+export { navBar, articles, mainBody, about, repos, skills, getInTouch };

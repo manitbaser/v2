@@ -8,6 +8,7 @@ import {
   // leadership,
   skills,
   getInTouch,
+  articles,
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -15,8 +16,8 @@ import Project from "./components/home/Project";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Skills from "./components/home/Skills";
-// import { Blog } from "./components/blog/Blog";
-// import BlogPost from "./components/blog/BlogPost";
+import Articles from "./components/home/Articles";
+
 import GetInTouch from "./components/home/GetInTouch.jsx";
 // import Leadership from "./components/home/Leadership.jsx";
 
@@ -45,6 +46,12 @@ const Home = React.forwardRef((props, ref) => {
           username={repos.gitHubUsername}
           length={repos.reposLength}
           specfic={repos.specificRepos}
+        />
+      )}
+      {articles.show && (
+        <Articles
+          heading={articles.heading}
+          username={articles.username}
         />
       )}
       {/* {leadership.show && (

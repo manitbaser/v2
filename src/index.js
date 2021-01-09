@@ -3,8 +3,6 @@ import ReactDOM from "react-dom";
 import "./scss/custom.scss";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import Particles from "react-tsparticles";
-import {Jumbotron} from "react-bootstrap";
 
 ReactDOM.render(
     <div style={{position:'center', background:'#27c2b5',}}>
