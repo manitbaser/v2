@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
-import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import Row from "react-bootstrap/Row";
 import ArticleCard from "./ArticleCard";
 import axios from "axios";
-import { Col } from "react-bootstrap";
+
 
 const dummyArticle = {
   name: null,

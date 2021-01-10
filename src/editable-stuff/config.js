@@ -1,12 +1,12 @@
 // Navigation Bar SECTION
 const navBar = {
   show: true,
-  gradientColors: "#008192,#006492, #004e92, #053d6d, #022747, #000428, #00010c, #190638, #351a61, #563264, #804685, #a43bac, #c9318f, #c92f6f, #cb2d3e, #CB3066, #e96443, #ff9b11, #FFC371",
+  gradientColors: "#008192, #006492, #004e92, #053d6d, #022747, #000428, #00010c, #190638, #351a61, #563264, #804685, #a43bac, #c9318f, #c92f6f, #cb2d3e, #CB3066, #e96443, #ff9b11, #FFC371",
 };
 
 // Main Body SECTION
 const mainBody = {
-  gradientColors: "#008192,#006492, #004e92, #053d6d, #022747, #000428, #00010c, #190638, #351a61, #563264, #804685, #a43bac, #c9318f, #c92f6f, #cb2d3e, #CB3066, #e96443, #ff9b11, #FFC371",
+  gradientColors: "#008192, #006492, #004e92, #053d6d, #022747, #000428, #00010c, #190638, #351a61, #563264, #804685, #a43bac, #c9318f, #c92f6f, #cb2d3e, #CB3066, #e96443, #ff9b11, #FFC371",
   firstName: "Manit",
   middleName: "",
   lastName: "Baser",
@@ -87,7 +87,7 @@ const skills = {
     { name: "Data Structures", value: 90 },
     { name: "C++", value: 90 },
     { name: "Deep Learning", value: 75 },
-    { name: "JavaScript", value: 50 },
+    { name: "JavaScript", value: 55 },
     { name: "MATLAB", value: 75 },
     // { name: "React", value: 65 },
     // { name: "HTML/CSS", value: 60 },

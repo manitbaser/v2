@@ -17,9 +17,9 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Skills from "./components/home/Skills";
 import Articles from "./components/home/Articles";
-
 import GetInTouch from "./components/home/GetInTouch.jsx";
-// import Leadership from "./components/home/Leadership.jsx";
+import Jumbotron from "react-bootstrap/Jumbotron";
+
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -40,6 +40,9 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
+      <div style={{background: `linear-gradient(180deg,${mainBody.gradientColors})`,
+          backgroundSize: "500% 500%",
+          position:'center',}}>
       {repos.show && (
         <Project
           heading={repos.heading}
@@ -69,6 +72,7 @@ const Home = React.forwardRef((props, ref) => {
           softSkills={skills.softSkills}
         />
       )}
+      </div>
     </>
   );
 });

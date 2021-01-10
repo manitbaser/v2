@@ -2,17 +2,16 @@ import React from "react";
 import Typist from "react-typist";
 import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
+import Particles from "react-tsparticles";
 
 const MainBody = React.forwardRef(
   ({ gradient, title, message, icons }, ref) => {
     return (
-      <Jumbotron
+  <div style={{position:'center',}}>
+  <div style={{position: 'absolute', left: 0, right: 0, alignItems: 'center',alignSelf: 'center'}}>
+  <Jumbotron
         fluid
         id="home"
-        style={{
-          background: `linear-gradient(136deg,${gradient})`,
-          backgroundSize: "1200% 1200%",
-        }}
         className="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
       >
         <div id="stars"></div>
@@ -48,6 +47,95 @@ const MainBody = React.forwardRef(
           </a>
         </Container>
       </Jumbotron>
+    </div>
+    <div style={{position:'center'}}>
+    <Jumbotron
+      style={{
+          background: `linear-gradient(136deg,${gradient})`,
+          backgroundSize: "1200% 1200%",
+        }}
+      fluid
+      className="title bg-transparent bgstyle text-light min-vh-100 align-content-center align-items-center flex-wrap m-0"
+    >
+      <Particles
+          id="tsparticles"
+          options={{
+            fpsLimit: 60,
+            // interactivity: {
+            //   detectsOn: "canvas",
+            //   events: {
+            //     onClick: {
+            //       enable: true,
+            //       mode: "push",
+            //     },
+            //     onHover: {
+            //       enable: true,
+            //       mode: "repulse",
+            //     },
+            //     resize: true,
+            //   },
+            //   modes: {
+            //     bubble: {
+            //       distance: 400,
+            //       duration: 2,
+            //       opacity: 0.8,
+            //       size: 40,
+            //     },
+            //     push: {
+            //       quantity: 4,
+            //     },
+            //     repulse: {
+            //       distance: 200,
+            //       duration: 0.4,
+            //     },
+            //   },
+            // },
+            particles: {
+              color: {
+                value: "#008192",
+              },
+              links: {
+                color: "#008192",
+                distance: 150,
+                enable: true,
+                opacity: 0.5,
+                width: 1,
+              },
+              collisions: {
+                enable: true,
+              },
+              move: {
+                direction: "none",
+                enable: true,
+                outMode: "bounce",
+                random: false,
+                speed: 6,
+                straight: false,
+              },
+              number: {
+                density: {
+                  enable: true,
+                  value_area: 800,
+                },
+                value: 80,
+              },
+              opacity: {
+                value: 0.8,
+              },
+              shape: {
+                type: "circle",
+              },
+              size: {
+                random: true,
+                value: 5,
+              },
+            },
+            detectRetina: true,
+          }}
+        />
+        </Jumbotron>
+    </div>
+  </div>  
     );
   }
 );
