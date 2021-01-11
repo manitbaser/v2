@@ -74,7 +74,7 @@ const Home = React.forwardRef((props, ref) => {
           softSkills={skills.softSkills}
         />
       )}
-      <div id="stars"></div>
+      {/* <div id="stars"></div> */}
       </div>
     </>
   );
