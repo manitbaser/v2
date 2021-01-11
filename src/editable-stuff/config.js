@@ -1,12 +1,12 @@
 // Navigation Bar SECTION
 const navBar = {
   show: true,
-  gradientColors: "#008192, #006492, #004e92, #053d6d, #022747, #000428, #00010c, #190638, #351a61, #563264, #804685, #a43bac, #c9318f, #c92f6f, #cb2d3e, #CB3066, #e96443, #ff9b11, #FFC371",
 };
 
 // Main Body SECTION
 const mainBody = {
-  gradientColors: "#008192, #006492, #004e92, #053d6d, #022747, #000428, #00010c, #190638, #351a61, #563264, #804685, #a43bac, #c9318f, #c92f6f, #cb2d3e, #CB3066, #e96443, #ff9b11, #FFC371",
+  gradientColors: "#12b8ce, #0ba4af, #0b7baf, #0b58af, #053d6d, #022747, #000428, #00010c, #190638, #351a61, #7e2047, #c92f6f, #cb2d3e, #e7795e, #ff9b11, #FFC371",
+  bodyColors: "#12b8ce, #0ba4af, #0b7baf, #0b58af, #053d6d",
   firstName: "Manit",
   middleName: "",
   lastName: "Baser",

@@ -18,7 +18,6 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/home/Skills";
 import Articles from "./components/home/Articles";
 import GetInTouch from "./components/home/GetInTouch.jsx";
-import Jumbotron from "react-bootstrap/Jumbotron";
 
 
 const Home = React.forwardRef((props, ref) => {
@@ -40,8 +39,8 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
-      <div style={{background: `linear-gradient(180deg,${mainBody.gradientColors})`,
-          backgroundSize: "500% 500%",
+      <div style={{background: `linear-gradient(180deg,${mainBody.bodyColors})`,
+          backgroundSize: "100%, 100%",
           position:'center',}}>
       {repos.show && (
         <Project
@@ -57,14 +56,6 @@ const Home = React.forwardRef((props, ref) => {
           username={articles.username}
         />
       )}
-      {/* {leadership.show && (
-        <Leadership
-          heading={leadership.heading}
-          message={leadership.message}
-          img={leadership.images}
-          imageSize={leadership.imageSize}
-        />
-      )} */}
       {skills.show && (
         <Skills
           heading={skills.heading}
@@ -89,7 +80,6 @@ const App = () => {
       <Footer>
         {getInTouch.show && (
           <GetInTouch
-            gradient={getInTouch.gradientColors}
             heading={getInTouch.heading}
             message={getInTouch.message}
             email={getInTouch.email}

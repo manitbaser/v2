@@ -12,10 +12,9 @@ const MainBody = React.forwardRef(
   <Jumbotron
         fluid
         id="home"
-        className="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
+        className="title bg-transparent min-vh-100 d-flex align-items-center m-0"
       >
-        <div id="stars"></div>
-        <Container className="text-center">
+        <Container>
           <h1 ref={ref} className="display-1">
             {title}
           </h1>
@@ -55,10 +54,12 @@ const MainBody = React.forwardRef(
           backgroundSize: "1200% 1200%",
         }}
       fluid
-      className="title bg-transparent bgstyle text-light min-vh-100 align-content-center align-items-center flex-wrap m-0"
+      className="title bg-transparent bgstyle text-light align-content-center align-items-center flex-wrap m-0"
     >
+    <div id="stars"></div>
       <Particles
           id="tsparticles"
+          width='100vw' height="92vh"
           options={{
             fpsLimit: 60,
             // interactivity: {
@@ -92,10 +93,10 @@ const MainBody = React.forwardRef(
             // },
             particles: {
               color: {
-                value: "#008192",
+                value: "#9be6f0",
               },
               links: {
-                color: "#008192",
+                color: "#9be6f0",
                 distance: 150,
                 enable: true,
                 opacity: 0.5,
@@ -117,7 +118,7 @@ const MainBody = React.forwardRef(
                   enable: true,
                   value_area: 800,
                 },
-                value: 80,
+                value: 64,
               },
               opacity: {
                 value: 0.8,
