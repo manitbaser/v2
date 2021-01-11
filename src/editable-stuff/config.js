@@ -6,7 +6,7 @@ const navBar = {
 // Main Body SECTION
 const mainBody = {
   gradientColors: "#12b8ce, #0ba4af, #0b7baf, #0b58af, #053d6d, #022747, #000428, #00010c, #190638, #351a61, #7e2047, #c92f6f, #cb2d3e, #e7795e, #ff9b11, #FFC371",
-  bodyColors: "#12b8ce, #0ba4af, #0b7baf, #0b58af, #053d6d",
+  bodyColors: "#12b8ce, #0ba4af, #0b7baf, #0b58af, #053d6d,  #022747, #000428",
   firstName: "Manit",
   middleName: "",
   lastName: "Baser",
@@ -60,6 +60,14 @@ const about = {
 //      i.e: reposLength: 0,
 // If you want to display specfic projects, add the repository names,
 //      i.e ["repository-1", "repo-2"]
+const workEx = {
+  show: true,
+  heading: "Work Experience",
+  draupIcon: require("../editable-stuff/draup.jpg"),
+  ceeriIcon: require("../editable-stuff/ceeri.jpg"),
+  smIcon: require("../editable-stuff/sun.png"),
+};
+
 const repos = {
   show: true,
   heading: "Recent Projects",
@@ -87,8 +95,8 @@ const skills = {
     { name: "Data Structures", value: 90 },
     { name: "C++", value: 90 },
     { name: "Deep Learning", value: 75 },
-    { name: "JavaScript", value: 55 },
-    { name: "MATLAB", value: 75 },
+    { name: "JavaScript", value: 60 },
+    { name: "MATLAB", value: 70 },
     // { name: "React", value: 65 },
     // { name: "HTML/CSS", value: 60 },
     // { name: "C#", value: 80 },
@@ -119,4 +127,4 @@ const getInTouch = {
 //   show: false,
 // };
 
-export { navBar, articles, mainBody, about, repos, skills, getInTouch };
+export { workEx, navBar, articles, mainBody, about, repos, skills, getInTouch };

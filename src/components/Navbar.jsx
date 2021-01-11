@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { useScrollPosition } from "../hooks/useScrollPosition";
 import useResizeObserver from "../hooks/useResizeObserver";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { mainBody, articles, repos, about, skills } from "../editable-stuff/config.js";
+import { mainBody, workEx, articles, repos, about, skills } from "../editable-stuff/config.js";
 
 const Navigation = React.forwardRef((props, ref) => {
   // const { showBlog, FirstName } = config;
@@ -50,6 +49,14 @@ const Navigation = React.forwardRef((props, ref) => {
               <Link to={process.env.PUBLIC_URL + "/blog"}>Blog</Link>
             </Nav.Link>
           } */}
+          {workEx.show && (
+            <Nav.Link
+              className={`nav-link lead ${ !isTop ? "" : "text-secondary"}`}
+              href={process.env.PUBLIC_URL + "/#workex"}
+            >
+              Work Experience
+            </Nav.Link>
+          )}
           {repos.show && (
             <Nav.Link
               className={`nav-link lead ${ !isTop ? "" : "text-secondary"}`}

@@ -4,6 +4,7 @@ import {
   navBar,
   mainBody,
   about,
+  workEx,
   repos,
   // leadership,
   skills,
@@ -17,6 +18,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Skills from "./components/home/Skills";
 import Articles from "./components/home/Articles";
+import WorkEx from "./components/home/WorkEx"
 import GetInTouch from "./components/home/GetInTouch.jsx";
 
 
@@ -42,6 +44,14 @@ const Home = React.forwardRef((props, ref) => {
       <div style={{background: `linear-gradient(180deg,${mainBody.bodyColors})`,
           backgroundSize: "100%, 100%",
           position:'center',}}>
+      {workEx.show && (
+        <WorkEx
+          heading={workEx.heading}
+          draupIcon={workEx.draupIcon}
+          ceeriIcon={workEx.ceeriIcon}
+          smIcon={workEx.smIcon}
+        />
+      )}
       {repos.show && (
         <Project
           heading={repos.heading}
@@ -50,6 +60,7 @@ const Home = React.forwardRef((props, ref) => {
           specfic={repos.specificRepos}
         />
       )}
+      <div id="stars"></div>
       {articles.show && (
         <Articles
           heading={articles.heading}
@@ -63,6 +74,7 @@ const Home = React.forwardRef((props, ref) => {
           softSkills={skills.softSkills}
         />
       )}
+      <div id="stars"></div>
       </div>
     </>
   );

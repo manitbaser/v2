@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Row from "react-bootstrap/Row";
 import Skeleton from "react-loading-skeleton";
+import Col from "react-bootstrap/Col";
 
 const ArticleCard = ({ value }) => {
   const {
@@ -18,14 +18,15 @@ const ArticleCard = ({ value }) => {
     total_count +=1;
   }
   return (
+    <Col md={5}>
       <Card className="card shadow-lg mb-5 text-center bg-white rounded">
         <Card.Body>
           <Card.Title as="h5">{title || <Skeleton />} </Card.Title>
-          <div class="embed-responsive">
+          <div className="embed-responsive">
           <a href={link}>
             <img
                 className="shadow-lg rounded"
-                height="140"
+                height="160"
                 src={thumbnail}
               />
               </a>
@@ -34,6 +35,7 @@ const ArticleCard = ({ value }) => {
           {link ? <CardButtons link={link} /> : <Skeleton count={2} />}
         </Card.Body>
       </Card>
+      </Col>
   );
 };
 
