@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0d2861e9a45b12c5278c29f685a5f6df",
+    "revision": "11f7d19028df3d961312df38e0314f5c",
     "url": "/index.html"
   },
   {
-    "revision": "22219b76b926f917706c",
+    "revision": "5209681ba8b7a9c778c6",
     "url": "/static/css/main.65c8efb8.chunk.css"
   },
   {
-    "revision": "52f8bd67394ff1eb5827",
-    "url": "/static/js/2.68ed4530.chunk.js"
+    "revision": "192b9d080536726a1805",
+    "url": "/static/js/2.3e3dfeeb.chunk.js"
   },
   {
     "revision": "ce15a0ffcfe8b91e4f219c1d7bb8c5ef",
-    "url": "/static/js/2.68ed4530.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.3e3dfeeb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "22219b76b926f917706c",
-    "url": "/static/js/main.f3fb5093.chunk.js"
+    "revision": "5209681ba8b7a9c778c6",
+    "url": "/static/js/main.8acb648a.chunk.js"
   },
   {
     "revision": "f52ba179432c3be28857",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4ca27246578a46e885153aa28f011eec",
     "url": "/static/media/ceeri.4ca27246.jpg"
+  },
+  {
+    "revision": "e8f0318f2fc590f967b15f3b88aaea26",
+    "url": "/static/media/datanest.e8f0318f.png"
   },
   {
     "revision": "246250d824e00698f4c1a86a7ef7d525",
