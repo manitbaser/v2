@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon}) => {
+const WorkEx = ({ heading, draupIcon, dnIcon, ceeriIcon, smIcon}) => {
   return (
     <Jumbotron fluid id="workex" className="bg-transparent m-0">
         <h2 className="display-4 pb-5 text-white text-center">{heading}</h2>
@@ -27,7 +27,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon}) => {
     <br/>
     <Col md={10}>
     <Row>
-    <Col md={4}>
+    <Col md={6}>
       <Card className="card shadow-lg  p-3 mb-5 bg-transparent rounded">
         <Card.Body>
           <Card.Title as="h6"><img
@@ -44,7 +44,24 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon}) => {
         </Card.Body>
       </Card>
       </Col>
-      <Col md={4}>
+      <Col md={6}>
+      <Card className="card shadow-lg  p-3 mb-5 bg-transparent rounded">
+        <Card.Body>
+          <Card.Title as="h6"><img
+                className="shadow-lg rounded"
+                src={dnIcon}
+                // alt="profilepicture"
+                // width={100}
+                height={100}
+              /><br></br><br></br>DataNest Ventures</Card.Title>
+          <Card.Title as="h6">Co-Founder</Card.Title>
+          <Card.Title as="h6">Gurgaon</Card.Title>
+          <Card.Title as="h6">March, 2020 - June, 2020</Card.Title>
+          {/* <Card.Text></Card.Text> */}
+        </Card.Body>
+      </Card>
+      </Col>
+      <Col md={6}>
       <Card className="card shadow-lg p-3 mb-5 bg-transparent rounded">
         <Card.Body>
           <Card.Title as="h6"><img
@@ -61,7 +78,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon}) => {
         </Card.Body>
       </Card>
       </Col>
-      <Col md={4}>
+      <Col md={6}>
       <Card className="card shadow-lg  p-3 mb-5 bg-transparent rounded">
         <Card.Body>
           <Card.Title as="h6"><img
@@ -70,7 +87,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon}) => {
                 // alt="profilepicture"
                 // width={100}
                 height={100}
-              /><br></br><br></br>Draup</Card.Title>
+              /><br></br><br></br>Sun Mobility</Card.Title>
           <Card.Title as="h6">Software Development Intern</Card.Title>
           <Card.Title as="h6">Bangalore</Card.Title>
           <Card.Title as="h6">May, 2019 - July, 2019</Card.Title>

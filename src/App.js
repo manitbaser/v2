@@ -5,6 +5,7 @@ import {
   mainBody,
   about,
   workEx,
+  achievements,
   repos,
   // leadership,
   skills,
@@ -19,6 +20,7 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/home/Skills";
 import Articles from "./components/home/Articles";
 import WorkEx from "./components/home/WorkEx"
+import Achievements from "./components/home/Achievements"
 import GetInTouch from "./components/home/GetInTouch.jsx";
 
 
@@ -50,6 +52,19 @@ const Home = React.forwardRef((props, ref) => {
           draupIcon={workEx.draupIcon}
           ceeriIcon={workEx.ceeriIcon}
           smIcon={workEx.smIcon}
+          dnIcon={workEx.dnIcon}
+        />
+      )}
+      <div id="stars"></div>
+      {achievements.show && (
+        <Achievements
+          heading={achievements.heading}
+          fkIcon={achievements.fkIcon}
+          euIcon={achievements.euIcon}
+          tghIcon={achievements.tghIcon}
+          woflramIcon={achievements.woflramIcon}
+          buIcon={achievements.buIcon}
+          mhrdIcon={achievements.mhrdIcon}
         />
       )}
       {repos.show && (

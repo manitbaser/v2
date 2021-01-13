@@ -51,7 +51,7 @@ const about = {
   imageLink: require("../editable-stuff/manitbaser.png"),
   imageSize: 375,
   message:
-    "My name is Manit Baser. I’m a final year undergraduate in Birla Institute of Technology and Science, Pilani, India, pursuing B.E. (Hons.) in Electrical and Electronics. I am intrigued by the applications of deep learning and software development to tackle real-world problems, and I am determined to continuously learn and grow and make the world a better place using my knowledge and experience.",
+    "My name is Manit Baser. I’m a final year undergraduate at Birla Institute of Technology and Science, Pilani, India, pursuing B.E. (Hons.) in Electrical and Electronics. I am intrigued by the applications of deep learning and software development to tackle real-world problems, and I am determined to continuously learn and grow and make the world a better place using my knowledge and experience.",
   resume: require("../editable-stuff/resume.pdf"),
 };
 
@@ -66,6 +66,18 @@ const workEx = {
   draupIcon: require("../editable-stuff/draup.jpg"),
   ceeriIcon: require("../editable-stuff/ceeri.jpg"),
   smIcon: require("../editable-stuff/sun.png"),
+  dnIcon: require("../editable-stuff/datanest.png"),
+};
+
+const achievements = {
+  show: true,
+  heading: "Achievements",
+  fkIcon: require("../editable-stuff/flipkart.png"),
+  euIcon: require("../editable-stuff/EU.jpg"),
+  tghIcon: require("../editable-stuff/tgh.png"),
+  woflramIcon: require("../editable-stuff/wolfram.png"),
+  buIcon: require("../editable-stuff/bu.jpg"),
+  mhrdIcon: require("../editable-stuff/mhrd.jpg"),
 };
 
 const repos = {
@@ -127,4 +139,4 @@ const getInTouch = {
 //   show: false,
 // };
 
-export { workEx, navBar, articles, mainBody, about, repos, skills, getInTouch };
+export { achievements, workEx, navBar, articles, mainBody, about, repos, skills, getInTouch };
