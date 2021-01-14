@@ -49,6 +49,14 @@ const Navigation = React.forwardRef((props, ref) => {
               <Link to={process.env.PUBLIC_URL + "/blog"}>Blog</Link>
             </Nav.Link>
           } */}
+          {about.show && (
+            <Nav.Link
+              className={`nav-link lead ${ !isTop ? "" : "text-secondary"}`}
+              href={process.env.PUBLIC_URL + "/#aboutme"}
+            >
+              About
+            </Nav.Link>
+          )}
           {workEx.show && (
             <Nav.Link
               className={`nav-link lead ${ !isTop ? "" : "text-secondary"}`}
@@ -81,14 +89,6 @@ const Navigation = React.forwardRef((props, ref) => {
           >
             Resume
           </Nav.Link>
-          {about.show && (
-            <Nav.Link
-              className={`nav-link lead ${ !isTop ? "" : "text-secondary"}`}
-              href={process.env.PUBLIC_URL + "/#aboutme"}
-            >
-              About
-            </Nav.Link>
-          )}
           {articles.show && (
             <Nav.Link
               className={`nav-link lead ${ !isTop ? "" : "text-secondary"}`}

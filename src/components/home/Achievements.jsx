@@ -79,6 +79,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
       <Col md={4}>
       <Card className="card shadow-lg  p-3 mb-5  rounded">
         <Card.Body>
+        <div class="embed-responsive">
           <Card.Title as="h6"><img
                 className="shadow-lg rounded"
                 src={buIcon}
@@ -94,6 +95,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
           <a href="https://devpost.com/software/covi_fight" target=" _blank" className="btn btn-outline-secondary">
         <i className="fas fa-external-link-square-alt" />
       </a>
+      </div>
         </Card.Body>
       </Card>
       </Col>
