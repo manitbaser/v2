@@ -34,6 +34,7 @@ const Home = React.forwardRef((props, ref) => {
         icons={mainBody.icons}
         ref={ref}
       />
+      
       {about.show && (
         <AboutMe
           heading={about.heading}

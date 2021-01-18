@@ -109,7 +109,7 @@ const MainBody = React.forwardRef(
                 direction: "none",
                 enable: true,
                 outMode: "bounce",
-                random: false,
+                random: true,
                 speed: 6,
                 straight: false,
               },
@@ -118,7 +118,7 @@ const MainBody = React.forwardRef(
                   enable: true,
                   value_area: 800,
                 },
-                value: 64,
+                value: 50,
               },
               opacity: {
                 value: 0.8,

@@ -5,12 +5,13 @@ const navBar = {
 
 // Main Body SECTION
 const mainBody = {
-  gradientColors: "#12b8ce, #0ba4af, #0b7baf, #0b58af, #053d6d, #022747, #000428, #00010c, #190638, #351a61, #7e2047, #c92f6f, #cb2d3e, #e7795e, #ff9b11, #FFC371",
-  bodyColors: "#12b8ce, #0ba4af, #0b7baf, #0b58af, #053d6d,  #022747, #000428",
+  // gradientColors: "#12b8ce, #0ba4af, #0b7baf, #0b58af, #053d6d, #022747, #000428, #00010c, #190638, #351a61, #7e2047, #c92f6f, #cb2d3e, #e7795e, #ff9b11, #FFC371",
+  gradientColors: "#00cdac, #02aab0, #004e92, #000428, #351a61, #7e2047, #c92f6f, #ed4264, #ffedbc",
+  bodyColors: "#004e92, #000428",
   firstName: "Manit",
   middleName: "",
   lastName: "Baser",
-  message: "Senior, BITS Pilani | Backend Developer | Deep Learning Enthusiast",
+  message: "Senior, BITS Pilani | Developer | Deep Learning Enthusiast",
   icons: [
     {
       image: "fa-github",
