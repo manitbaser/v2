@@ -49,8 +49,14 @@ code {
   transition: background-color 0.2s;
 }
 .navbar-white {
-  background-color: rgba(234, 236, 239, 1);
+  // background-color: rgba(234, 236, 239, 1);
   transition: background-color 0.2s;
+  
+  background: rgba( 255, 255, 255, 0.84 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
 }
 .brand {
   color: #363636 !important;
@@ -109,6 +115,14 @@ code {
   transition: transform 0.3s, box-shadow 0.3s;
   align-items:space-between;
   justify-content:space-between;
+
+  background: rgba( 255, 255, 255, 0.5 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+
+
   height: calc(100% - 30px);
   &:hover {
     box-shadow: 0 2rem 3rem rgba($black, 0.175) !important;
@@ -136,4 +150,11 @@ code {
   & > * {
     animation: progress 1.5s ease-in-out forwards;
   }
+}
+
+.aboutme {
+  background: rgba( 255, 255, 255, 0.84 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
 }

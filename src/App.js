@@ -25,6 +25,9 @@ import GetInTouch from "./components/home/GetInTouch.jsx";
 const Home = React.forwardRef((props, ref) => {
   return (
     <>
+    <div style={{background: `linear-gradient(275deg,${mainBody.bodyColors})`,
+          backgroundSize: "100%, 100%",
+          position:'center',}}>
       <MainBody
         gradient={mainBody.gradientColors}
         title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
@@ -32,7 +35,6 @@ const Home = React.forwardRef((props, ref) => {
         icons={mainBody.icons}
         ref={ref}
       />
-      
       {about.show && (
         <AboutMe
           heading={about.heading}
@@ -42,9 +44,6 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
-      <div style={{background: `linear-gradient(180deg,${mainBody.bodyColors})`,
-          backgroundSize: "100%, 100%",
-          position:'center',}}>
       {workEx.show && (
         <WorkEx
           heading={workEx.heading}

@@ -19,7 +19,7 @@ const ArticleCard = ({ value }) => {
   }
   return (
     <Col md={5}>
-      <Card className="card shadow-lg mb-5 text-center bg-white rounded">
+      <Card className="card mb-5 text-center">
         <Card.Body>
           <Card.Title as="h5">{title || <Skeleton />} </Card.Title>
           <div className="embed-responsive">

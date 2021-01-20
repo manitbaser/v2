@@ -32,13 +32,13 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
   };
 
   return (
-    <div id="aboutme" className="jumbotron jumbotron-fluid m-0">
+    <div id="aboutme" className="jumbotron aboutme jumbotron-fluid m-0">
       <div className="container container-fluid">
         <div className="row">
           <div className="col-5 d-none d-lg-block align-self-center">
             {showPic && (
               <img
-                className="shadow-lg rounded-circle"
+                className="shadow-lg card rounded-circle"
                 src={profilePicUrl}
                 alt="profilepicture"
                 width={imgSize}

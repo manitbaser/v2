@@ -16,7 +16,7 @@ const WorkEx = ({ heading, draupIcon, dnIcon, ceeriIcon, smIcon}) => {
     <Col md={10}>
     <Row>
     <Col md={6}>
-      <Card className="card shadow-lg  p-3 mb-5 rounded">
+      <Card className="card shadow-lg   mb-5 ">
         <Card.Body>
           <Card.Title as="h4"><img
                 className="shadow-lg rounded"
@@ -33,7 +33,7 @@ const WorkEx = ({ heading, draupIcon, dnIcon, ceeriIcon, smIcon}) => {
       </Card>
       </Col>
       <Col md={6}>
-      <Card className="card shadow-lg  p-3 mb-5 rounded">
+      <Card className="card shadow-lg    mb-5 ">
         <Card.Body>
           <Card.Title as="h4"><img
                 className="shadow-lg rounded"
@@ -50,7 +50,7 @@ const WorkEx = ({ heading, draupIcon, dnIcon, ceeriIcon, smIcon}) => {
       </Card>
       </Col>
       <Col md={6}>
-      <Card className="card shadow-lg p-3 mb-5 rounded">
+      <Card className="card shadow-lg  mb-5  ">
         <Card.Body>
           <Card.Title as="h4"><img
                 className="shadow-lg rounded"
@@ -67,7 +67,7 @@ const WorkEx = ({ heading, draupIcon, dnIcon, ceeriIcon, smIcon}) => {
       </Card>
       </Col>
       <Col md={6}>
-      <Card className="card shadow-lg  p-3 mb-5 rounded">
+      <Card className="card shadow-lg   mb-5 ">
         <Card.Body>
           <Card.Title as="h4"><img
                 className="shadow-lg rounded"

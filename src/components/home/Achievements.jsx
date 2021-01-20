@@ -14,7 +14,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
     <Col md={10}>
     <Row>
     <Col md={4}>
-      <Card className="card shadow-lg  p-3 mb-5  rounded">
+      <Card className="card p-3">
         <Card.Body>
           <Card.Title as="h6"><img
                 className="shadow-lg rounded"
@@ -33,7 +33,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
       </Card>
       </Col>
       <Col md={4}>
-      <Card className="card shadow-lg  p-3 mb-5  rounded">
+      <Card className="card p-3">
         <Card.Body>
           <Card.Title as="h6"><img
                 className="shadow-lg rounded"
@@ -54,7 +54,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
       </Card>
       </Col>
       <Col md={4}>
-      <Card className="card shadow-lg  p-3 mb-5  rounded">
+      <Card className="card p-3">
         <Card.Body>
           <Card.Title as="h6"><img
                 className="shadow-lg rounded"
@@ -74,7 +74,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
       </Card>
       </Col>
       <Col md={4}>
-      <Card className="card shadow-lg  p-3 mb-5  rounded">
+      <Card className="card p-3">
         <Card.Body>
         <div class="embed-responsive">
           <Card.Title as="h6"><img
@@ -96,7 +96,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
       </Card>
       </Col>
       <Col md={4}>
-      <Card className="card shadow-lg  p-3 mb-5  rounded">
+      <Card className="card p-3">
         <Card.Body>
           <Card.Title as="h6"><img
                 className="shadow-lg rounded"
@@ -117,7 +117,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
       </Card>
       </Col>
       <Col md={4}>
-      <Card className="card shadow-lg  p-3 mb-5  rounded">
+      <Card className="card p-3">
         <Card.Body>
           <Card.Title as="h6"><img
                 className="shadow-lg rounded"

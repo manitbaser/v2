@@ -29,7 +29,8 @@
     "react-scroll-rotate": "0.0.7",
     "react-tsparticles": "^1.18.11",
     "react-typist": "^2.0.5",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "ui-glassmorphism": "0.0.1"
   },
   "scripts": {
     "predeploy": "npm run build",
