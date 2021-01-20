@@ -7,7 +7,6 @@ import {
   workEx,
   achievements,
   repos,
-  // leadership,
   skills,
   getInTouch,
   articles,
@@ -22,7 +21,6 @@ import Articles from "./components/home/Articles";
 import WorkEx from "./components/home/WorkEx"
 import Achievements from "./components/home/Achievements"
 import GetInTouch from "./components/home/GetInTouch.jsx";
-
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -90,7 +88,6 @@ const Home = React.forwardRef((props, ref) => {
           softSkills={skills.softSkills}
         />
       )}
-      {/* <div id="stars"></div> */}
       </div>
     </>
   );
