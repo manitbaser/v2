@@ -22,7 +22,7 @@ function Skills({ heading, hardSkills, softSkills }) {
         <h2 ref={skillsTabRef} className="display-4 pb-5 text-center">
           {heading}
         </h2>
-        <Card className="card text-dark text-center" >
+        <Card className="skills text-dark text-center" >
         <Card.Body>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: 20 }}>
           <div>

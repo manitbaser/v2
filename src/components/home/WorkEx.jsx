@@ -10,7 +10,7 @@ const WorkEx = ({ heading, draupIcon, dnIcon, ceeriIcon, smIcon}) => {
         <h2 className="display-4 pb-5 text-white text-center">{heading}</h2>
         <br></br>
         <center>
-        <img width="400" className="shadow-lg rounded" title="comp_3.gif" src="https://cdn.dribbble.com/users/1980856/screenshots/4760116/comp_3.gif" alt="Comp 3" />
+        <img width="400" className="button shadow-lg" title="comp_3.gif" src="https://cdn.dribbble.com/users/1980856/screenshots/4760116/comp_3.gif" alt="Comp 3" />
         <br></br><br></br>
         <h4 className="pb-5 text-white text-center">Incoming Software Development Engineer at Flipkart</h4>
     <Col md={10}>

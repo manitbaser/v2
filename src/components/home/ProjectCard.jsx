@@ -15,7 +15,7 @@ const ProjectCard = ({ value }) => {
   } = value;
   return (
     <Col md={6}>
-      <Card className="card">
+      <Card className="card p-2">
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
           <Card.Text>{description || <Skeleton count={3} />} </Card.Text>
@@ -40,7 +40,7 @@ const ProjectCard = ({ value }) => {
 const CardButtons = ({ svn_url }) => {
   return (
     <>
-      <a href={svn_url} target=" _blank" className="btn btn-outline-secondary">
+      <a href={svn_url} target=" _blank" className="btn text-dark btn-outline-light">
         <i className="fab fa-github" /> Repo
       </a>
     </>

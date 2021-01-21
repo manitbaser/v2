@@ -31,7 +31,7 @@ const ArticleCard = ({ value }) => {
               />
               </a>
             </div>
-          <hr />
+          <br />
           {link ? <CardButtons link={link} /> : <Skeleton count={2} />}
         </Card.Body>
       </Card>
@@ -42,7 +42,7 @@ const ArticleCard = ({ value }) => {
 const CardButtons = ({ link }) => {
   return (
     <>
-      <a href={link} target=" _blank" className="btn btn-outline-secondary">
+      <a href={link} target=" _blank" className="btn text-dark btn-outline-light">
         <i className="fab fa-medium" /> Article
       </a>
     </>

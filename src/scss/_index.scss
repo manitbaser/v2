@@ -49,20 +49,24 @@ code {
   transition: background-color 0.2s;
 }
 .navbar-white {
-  // background-color: rgba(234, 236, 239, 1);
+  background-color: rgba(234, 236, 239, 1);
   transition: background-color 0.2s;
   
-  background: rgba( 255, 255, 255, 0.84 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border-radius: 10px;
+  // background: rgba( 255, 255, 255, 0.84 );
+  // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
+  // backdrop-filter: blur( 4px );
+  // -webkit-backdrop-filter: blur( 4px );
+  // border-radius: 10px;
 }
 .brand {
   color: #363636 !important;
 }
 .nav-link {
   transition: color, 0.2s;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left:1%;
+  margin-right:1%;
 }
 .toggler {
   border: none;
@@ -80,8 +84,8 @@ code {
   transition: all 0.8s;
   margin: 4px;
   &:hover {
-    color: black;
-    text-shadow: 1.25px 0px 0px #02ccff, -1.25px 0px 0px #02ccff, 0px 1.25px 0px #02ccff, 0px -1.25px 0px #02ccff;
+    color: #000000;
+    text-shadow: 1.25px 0px 0px #b2fff9, -1.25px 0px 0px #b2fff9, 0px 1.25px 0px #b2fff9, 0px -1.25px 0px #b2fff9;
     padding-left: 5px;
     padding-right: 5px;
     -moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -116,7 +120,7 @@ code {
   align-items:space-between;
   justify-content:space-between;
 
-  background: rgba( 255, 255, 255, 0.5 );
+  background: rgba( 255, 255, 255, 0.2 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
@@ -158,3 +162,40 @@ code {
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
 }
+
+.button {
+  background: rgba( 255, 255, 255, 0.5 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+}
+
+.skills {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+}
+
+.navbardiv {
+  background: rgba(255, 175, 189, 0.4);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+}
+
+.navbarbuttons {
+  background: rgba( 255, 255, 255, 0.4 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left:1%;
+  margin-right:1%;
+}
+
