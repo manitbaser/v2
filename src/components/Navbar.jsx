@@ -37,31 +37,31 @@ const Navigation = React.forwardRef((props, ref) => {
       }`}
       expand="lg"
     >
-      <Navbar.Brand className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark btn-outline-light" : "text-secondary"}`} href={process.env.PUBLIC_URL + "/#home"}>
+      <Navbar.Brand className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark text-secondary" : "text-secondary"}`} href={process.env.PUBLIC_URL + "/#home"}>
       {`<${mainBody.firstName} />`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
       <Navbar.Collapse id="basic-navbar-nav">
-        {/* <Nav className="mr-auto"> */}
+        <Nav className="mr-md-auto">
           {about.show && (
             <Nav.Link
-              className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark btn-outline-light" : "text-secondary"}`}
+              className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark text-secondary" : "text-secondary"}`}
               href={process.env.PUBLIC_URL + "/#aboutme"}
             >
               About
             </Nav.Link>
           )}
-          {workEx.show && (
+          {/* {workEx.show && (
             <Nav.Link
-              className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark btn-outline-light" : "text-secondary"}`}
+              className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark text-secondary" : "text-secondary"}`}
               href={process.env.PUBLIC_URL + "/#workex"}
             >
               Work Experience
             </Nav.Link>
-          )}
+          )} */}
           {achievements.show && (
             <Nav.Link
-              className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark btn-outline-light" : "text-secondary"}`}
+              className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark text-secondary" : "text-secondary"}`}
               href={process.env.PUBLIC_URL + "/#achievements"}
             >
               Achievements
@@ -69,14 +69,14 @@ const Navigation = React.forwardRef((props, ref) => {
           )}
           {repos.show && (
             <Nav.Link
-              className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark btn-outline-light" : "text-secondary"}`}
+              className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark text-secondary" : "text-secondary"}`}
               href={process.env.PUBLIC_URL + "/#projects"}
             >
               Projects
             </Nav.Link>
           )}
           <Nav.Link
-            className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark btn-outline-light" : "text-secondary"}`}
+            className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark text-secondary" : "text-secondary"}`}
             href={about.resume}
             target="_blank"
             rel="noreferrer noopener"
@@ -85,7 +85,7 @@ const Navigation = React.forwardRef((props, ref) => {
           </Nav.Link>
           {articles.show && (
             <Nav.Link
-              className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark btn-outline-light" : "text-secondary"}`}
+              className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark text-secondary" : "text-secondary"}`}
               href={process.env.PUBLIC_URL + "/#articles"}
             >
               Articles
@@ -93,13 +93,13 @@ const Navigation = React.forwardRef((props, ref) => {
           )}
           {skills.show && (
             <Nav.Link
-            className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark btn-outline-light" : "text-secondary"}`}
+            className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark text-secondary" : "text-secondary"}`}
               href={process.env.PUBLIC_URL + "/#skills"}
             >
               Skills
             </Nav.Link>
           )}
-      {/* </Nav>   */}
+      </Nav>  
       </Navbar.Collapse>
     </Navbar>
   );
