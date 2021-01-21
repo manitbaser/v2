@@ -33,7 +33,7 @@ const Navigation = React.forwardRef((props, ref) => {
     <Navbar
       ref={navbarMenuRef}
       className={` fixed-top  ${
-        !isTop ? "navbardiv" : "navbar-transparent"
+        !isTop ? "navbar-white" : "navbar-transparent"
       }`}
       expand="lg"
     >
