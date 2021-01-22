@@ -10,6 +10,7 @@
     "url": "https://github.com/manitbaser"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.2",
     "axios": "^0.21.1",
     "bootstrap": "^4.5.2",
     "devicon-react-svg": "^0.2.3",
@@ -29,6 +30,7 @@
     "react-scroll-rotate": "0.0.7",
     "react-tsparticles": "^1.18.11",
     "react-typist": "^2.0.5",
+    "react-vertical-timeline-component": "^3.3.1",
     "typescript": "^3.9.7",
     "ui-glassmorphism": "0.0.1"
   },

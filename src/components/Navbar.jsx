@@ -51,14 +51,14 @@ const Navigation = React.forwardRef((props, ref) => {
               About
             </Nav.Link>
           )}
-          {/* {workEx.show && (
+          {workEx.show && (
             <Nav.Link
               className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark text-secondary" : "text-secondary"}`}
               href={process.env.PUBLIC_URL + "/#workex"}
             >
-              Work Experience
+              WorkEx
             </Nav.Link>
-          )} */}
+          )}
           {achievements.show && (
             <Nav.Link
               className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark text-secondary" : "text-secondary"}`}
