@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8dd8ac18150e9a6f91dc7a5c1e265b0b",
+    "revision": "af897812b912c45177ad7c0c68c5c059",
     "url": "/index.html"
   },
   {
-    "revision": "0db76140356479379f71",
+    "revision": "82a777190b4a4c28307d",
     "url": "/static/css/2.22ca87da.chunk.css"
   },
   {
-    "revision": "4c73f474ba056362f8c5",
+    "revision": "c04dc5c5abf535fb4c3d",
     "url": "/static/css/main.33236015.chunk.css"
   },
   {
-    "revision": "0db76140356479379f71",
-    "url": "/static/js/2.1bcd81bd.chunk.js"
+    "revision": "82a777190b4a4c28307d",
+    "url": "/static/js/2.26695246.chunk.js"
   },
   {
-    "revision": "ce15a0ffcfe8b91e4f219c1d7bb8c5ef",
-    "url": "/static/js/2.1bcd81bd.chunk.js.LICENSE.txt"
+    "revision": "29eb69a08ea4198f7b46e1db8a3d5045",
+    "url": "/static/js/2.26695246.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4c73f474ba056362f8c5",
-    "url": "/static/js/main.510fba88.chunk.js"
+    "revision": "c04dc5c5abf535fb4c3d",
+    "url": "/static/js/main.6b2d8eea.chunk.js"
   },
   {
     "revision": "f52ba179432c3be28857",
@@ -30,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4ca27246578a46e885153aa28f011eec",
     "url": "/static/media/ceeri.4ca27246.jpg"
-  },
-  {
-    "revision": "e8f0318f2fc590f967b15f3b88aaea26",
-    "url": "/static/media/datanest.e8f0318f.png"
   },
   {
     "revision": "246250d824e00698f4c1a86a7ef7d525",
