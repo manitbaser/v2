@@ -34,7 +34,7 @@ const Articles = ({ heading, username }) => {
     } catch (error) {
       console.error(error.message);
     }
-  }, [allReposAPI, allReposAPI.length]);
+  }, [allReposAPI]);
 
   useEffect(() => {
     fetchRepos();

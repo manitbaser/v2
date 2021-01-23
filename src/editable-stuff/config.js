@@ -77,7 +77,7 @@ const workEx = {
   draupIcon: require("../editable-stuff/draup.jpg"),
   ceeriIcon: require("../editable-stuff/ceeri.jpg"),
   smIcon: require("../editable-stuff/sun.png"),
-  dnIcon: require("../editable-stuff/datanest.png"),
+  fkIcon: require("../editable-stuff/flipkart.png"),
 };
 
 const achievements = {
@@ -94,7 +94,7 @@ const achievements = {
 const repos = {
   show: true,
   heading: "Recent Projects",
-  gitHubUsername: "manitbaser", //i.e."johnDoe12Gh"
+  gitHubUsername: "manitbaser",
   reposLength: 0,
   specificRepos: ["CoviFight", "manitbaser.github.io", "NNFL-Assignment-AlexNet", "Bingo", "Signed-Wallace-Multiplier", "Smart-Lighting-System-Proteus"],
 };

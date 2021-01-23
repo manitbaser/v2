@@ -50,7 +50,7 @@ const Home = React.forwardRef((props, ref) => {
           draupIcon={workEx.draupIcon}
           ceeriIcon={workEx.ceeriIcon}
           smIcon={workEx.smIcon}
-          dnIcon={workEx.dnIcon}
+          fkIcon={workEx.fkIcon}
         />
       )}
       <div id="stars"></div>

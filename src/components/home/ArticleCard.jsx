@@ -8,15 +8,8 @@ const ArticleCard = ({ value }) => {
       title,
       link,
       thumbnail,
-      categories,
   } = value;
 
-  const array = [];
-  let total_count = 0;
-  for (let index in categories) {
-    array.push(categories);
-    total_count +=1;
-  }
   return (
     <Col md={5}>
       <Card className="card mb-5 text-center">
