@@ -7,7 +7,9 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
   return (
     <Jumbotron fluid id="workex" className="bg-transparent m-0">
         <h2 className="display-4 pb-5 text-white text-center">{heading}</h2>
-        <VerticalTimeline>
+        <VerticalTimeline
+          // animate={false}
+        >
 
   <VerticalTimelineElement
     contentStyle={{ background: 'rgba( 255, 255, 255, 0.2 )' }}

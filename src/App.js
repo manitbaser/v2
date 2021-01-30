@@ -28,6 +28,13 @@ const Home = React.forwardRef((props, ref) => {
     <div style={{background: `linear-gradient(275deg,${mainBody.bodyColors})`,
           backgroundSize: "100%, 100%",
           position:'center',}}>
+        {/* <div style={{
+          background: `linear-gradient(136deg,${mainBody.bodyColors})`,
+          backgroundSize: "1200% 1200%",
+          
+        }}
+        className="bgstyle"
+        > */}
       <MainBody
         gradient={mainBody.gradientColors}
         title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
@@ -99,8 +106,6 @@ const App = () => {
     <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
       {navBar.show && <Navbar ref={titleRef} />}
       <Route path="/" exact component={() => <Home ref={titleRef} />} />
-      {/* {false && <Route path="/blog" exact component={Blog} />}
-      {false && <Route path="/blog/:id" component={BlogPost} />} */}
       <Footer>
         {getInTouch.show && (
           <GetInTouch

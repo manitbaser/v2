@@ -7,17 +7,8 @@ const navBar = {
 const mainBody = {
   // gradientColors: "#12b8ce, #0ba4af, #0b7baf, #0b58af, #053d6d, #022747, #000428, #00010c, #190638, #351a61, #7e2047, #c92f6f, #cb2d3e, #e7795e, #ff9b11, #FFC371",
   gradientColors: "#00cdac, #02aab0, #004e92, #000428, #351a61, #7e2047, #ed4264, #ffedbc",
-  // bodyColors: "#ff6a00, #ee0979",
-  // bodyColors: "#C33764, #1D2671",
-  // bodyColors: "#2193b0, #6dd5ed",
-  // bodyColors: "#2C5364, #203A43, #0F2027",
-  // bodyColors: "#c31432, #240b36",
-  // bodyColors: "#00B4DB, #0083B0",
-  // bodyColors: "#DA4453,#89216B",
-  // bodyColors: "#c94b4b,#4b134f",
-  // bodyColors: "#93a5cf, #e4efe9",
-  // bodyColors: "#96deda, #50c9c3",
   bodyColors: "#ffc3a0, #ffafbd",
+  // bodyColors: "#4DCCC6, #96E4DF",
   firstName: "Manit",
   middleName: "",
   lastName: "Baser",
@@ -145,9 +136,5 @@ const getInTouch = {
   email: "manitb06@gmail.com",
 };
 
-// // Blog SECTION
-// const blog = {
-//   show: false,
-// };
 
 export { achievements, workEx, navBar, articles, mainBody, about, repos, skills, getInTouch };
