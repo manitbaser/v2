@@ -48,7 +48,9 @@ const Navigation = React.forwardRef((props, ref) => {
               className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark text-secondary" : "text-secondary"}`}
               href={process.env.PUBLIC_URL + "/#aboutme"}
             >
+            <center>
               About
+              </center>
             </Nav.Link>
           )}
           {workEx.show && (
@@ -56,7 +58,9 @@ const Navigation = React.forwardRef((props, ref) => {
               className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark text-secondary" : "text-secondary"}`}
               href={process.env.PUBLIC_URL + "/#workex"}
             >
+            <center>
               WorkEx
+              </center>
             </Nav.Link>
           )}
           {achievements.show && (
@@ -64,7 +68,9 @@ const Navigation = React.forwardRef((props, ref) => {
               className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark text-secondary" : "text-secondary"}`}
               href={process.env.PUBLIC_URL + "/#achievements"}
             >
+            <center>
               Achievements
+              </center>
             </Nav.Link>
           )}
           {repos.show && (
@@ -72,7 +78,9 @@ const Navigation = React.forwardRef((props, ref) => {
               className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark text-secondary" : "text-secondary"}`}
               href={process.env.PUBLIC_URL + "/#projects"}
             >
+            <center>
               Projects
+              </center>
             </Nav.Link>
           )}
           <Nav.Link
@@ -81,14 +89,18 @@ const Navigation = React.forwardRef((props, ref) => {
             target="_blank"
             rel="noreferrer noopener"
           >
+          <center>
             Resume
+            </center>
           </Nav.Link>
           {articles.show && (
             <Nav.Link
               className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark text-secondary" : "text-secondary"}`}
               href={process.env.PUBLIC_URL + "/#articles"}
             >
+            <center>
               Articles
+              </center>
             </Nav.Link>
           )}
           {skills.show && (
@@ -96,7 +108,9 @@ const Navigation = React.forwardRef((props, ref) => {
             className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark text-secondary" : "text-secondary"}`}
               href={process.env.PUBLIC_URL + "/#skills"}
             >
+            <center>
               Skills
+              </center>
             </Nav.Link>
           )}
       </Nav>  

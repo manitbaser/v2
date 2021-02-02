@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, mhrdIcon}) => {
   return (
     <Jumbotron fluid id="achievements" className="bg-transparent m-0">
-        <h2 className="display-4 pb-5 text-white text-center">{heading}</h2>
+        <h2 className="display-4 pb-5 text-center">{heading}</h2>
         <center>
    
     <br/>
@@ -17,7 +17,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
       <Card className="card p-3">
         <Card.Body>
           <Card.Title as="h6"><img
-                className="shadow-lg rounded"
+                className="rounded"
                 src={fkIcon}
                 // alt="profilepicture"
                 // width={100}
@@ -40,7 +40,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
       <Card className="card p-3">
         <Card.Body>
           <Card.Title as="h6"><img
-                className="shadow-lg rounded"
+                className="rounded"
                 src={euIcon}
                 // alt="profilepicture"
                 // width={100}
@@ -65,7 +65,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
       <Card className="card p-3">
         <Card.Body>
           <Card.Title as="h6"><img
-                className="shadow-lg rounded"
+                className="rounded"
                 src={tghIcon}
                 // alt="profilepicture"
                 // width={100}
@@ -90,7 +90,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
         <Card.Body>
         <div className="embed-responsive">
           <Card.Title as="h6"><img
-                className="shadow-lg rounded"
+                className="rounded"
                 src={buIcon}
                 // alt="profilepicture"
                 // width={100}
@@ -115,7 +115,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
       <Card className="card p-3">
         <Card.Body>
           <Card.Title as="h6"><img
-                className="shadow-lg rounded"
+                className="rounded"
                 src={woflramIcon}
                 // alt="profilepicture"
                 // width={100}
@@ -139,7 +139,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
       <Card className="card p-3">
         <Card.Body>
           <Card.Title as="h6"><img
-                className="shadow-lg rounded"
+                className="rounded"
                 src={mhrdIcon}
                 // alt="profilepicture"
                 // width={100}

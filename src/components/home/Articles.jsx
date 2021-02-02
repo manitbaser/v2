@@ -44,7 +44,7 @@ const Articles = ({ heading, username }) => {
       <div id="articles">
   <Jumbotron fluid id="projects" className="bg-transparent m-0">
       {/* <div className="col-sm-6 mx-auto"> */}
-        <h2 className="display-4 pb-5 text-white text-center">{heading}</h2>
+        <h2 className="display-4 pb-5 text-center">{heading}</h2>
         {/* <Col className="text-center"> */}
         <center>
           {projectsArray.length

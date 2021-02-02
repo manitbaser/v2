@@ -6,9 +6,9 @@ import 'react-vertical-timeline-component/style.min.css';
 const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
   return (
     <Jumbotron fluid id="workex" className="bg-transparent m-0">
-        <h2 className="display-4 pb-5 text-white text-center">{heading}</h2>
+        <h2 className="display-4 pb-5 text-center">{heading}</h2>
         <VerticalTimeline
-          // animate={false}
+          animate={false}
         >
 
   <VerticalTimelineElement
@@ -23,7 +23,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
 <div className="row">
           <div className="col-5 align-self-center">
           <img
-                className="shadow-lg rounded"
+                className="rounded"
                 src={fkIcon}
                   width={100}
                   height={100}
@@ -52,7 +52,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
   <div className="row">
           <div className="col-5 align-self-center">
           <img
-                className="shadow-lg rounded"
+                className="rounded"
                 src={draupIcon}
                   width={100}
                   height={100}
@@ -81,7 +81,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
   <div className="row">
           <div className="col-5 align-self-center">
           <img
-                className="shadow-lg rounded"
+                className="rounded"
                 src={dnIcon}
                 // width={100}
                 height={100}
@@ -108,7 +108,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
   <div className="row">
           <div className="col-5 align-self-center">
           <img
-                className="shadow-lg rounded"
+                className="rounded"
                 src={ceeriIcon}
                 width={100}
                 height={100}
@@ -137,7 +137,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
   <div className="row">
           <div className="col-5 align-self-center">
           <img
-                className="shadow-lg rounded"
+                className="rounded"
                 src={smIcon}
                 width={100}
                 height={100}
