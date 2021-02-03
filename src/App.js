@@ -32,7 +32,10 @@ const Home = React.forwardRef((props, ref) => {
         icons={mainBody.icons}
         ref={ref}
       />
-      <div className="bgstyle">
+      {/* <div className="bgstyle"> */}
+      <div style={{background: 'linear-gradient(65deg, #0d0a0b 0%, #000428 20%, #004e92 50%, #02aab0 80%, #00cdac 100%)',
+          // backgroundSize: "100%, 100%",
+          position:'center',}}>
       {about.show && (
         <AboutMe
           heading={about.heading}

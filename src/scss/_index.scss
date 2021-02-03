@@ -28,9 +28,8 @@ code {
 
   // background-image: linear-gradient( 135deg, #03707a 10%, #000000 100%);
 
-  background-color: #0d0a0b;
-  background-image: linear-gradient(65deg, #0d0a0b 0%, #000428 20%, #004e92 50%, #02aab0 80%, #00cdac 100%);
-  position:'center';
+  // background-image: linear-gradient(65deg, #0d0a0b 0%, #000428 20%, #004e92 50%, #02aab0 80%, #00cdac 100%);
+  // position:'center';
 
   background-size: 100% 100%;
   -webkit-animation: BackgroundAnimation 70s ease infinite;
@@ -49,19 +48,13 @@ code {
   transition: background-color 0.2s;
 }
 .navbar-white {
-  // background-color: rgba(234, 236, 239, 1);
   transition: background-color 0.5s;
   background:  rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 16px );
   border-radius: 10px;
-  
-  // background: rgba( 255, 255, 255, 0.84 );
-  // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
-  // backdrop-filter: blur( 4px );
-  // -webkit-backdrop-filter: blur( 4px );
-  // border-radius: 10px;
+
 }
 .brand {
   color: #363636 !important;
@@ -185,7 +178,6 @@ code {
 }
 
 .navbarbuttons {
-  // background: rgba(255, 175, 189, 0.4);
   background: rgba( 255, 255, 255, 0.56 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
   backdrop-filter: blur( 4px );
