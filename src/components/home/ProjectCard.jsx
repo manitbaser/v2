@@ -18,7 +18,7 @@ const ProjectCard = ({ value }) => {
       <Card className="card p-2">
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
-          <Card.Text>{description || <Skeleton count={3} />} </Card.Text>
+          <Card.Text>{(description)?description:"" || <Skeleton count={3} />} </Card.Text>
           {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
           <hr />
           {languages_url ? (
@@ -40,7 +40,7 @@ const ProjectCard = ({ value }) => {
 const CardButtons = ({ svn_url }) => {
   return (
     <>
-      <a href={svn_url} target=" _blank" className="btn text-dark btn-outline-light">
+      <a href={svn_url} target=" _blank" className="btn btn-outline-light">
         <i className="fab fa-github" /> Repo
       </a>
     </>

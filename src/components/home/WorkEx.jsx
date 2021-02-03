@@ -5,7 +5,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
   return (
-    <Jumbotron fluid id="workex" className="bg-transparent m-0">
+    <Jumbotron fluid id="workex" className="bg-transparent text-light m-0">
         <h2 className="display-4 pb-5 text-center">{heading}</h2>
         <VerticalTimeline
           animate={false}
@@ -13,7 +13,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
 
   <VerticalTimelineElement
     contentStyle={{ background: 'rgba( 255, 255, 255, 0.2 )' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.6 )' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.2 )' }}
     // date="2010 - 2011"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff'}}
     icon={
@@ -21,7 +21,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
     }
   >
 <div className="row">
-          <div className="col-5 align-self-center">
+          <div className="col-4 align-self-center">
           <img
                 className="rounded"
                 src={fkIcon}
@@ -32,9 +32,9 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
               />
           </div>
 
-          <div className="col-7 align-self-center">
+          <div className="col-8 align-self-center">
           {/* <center> */}
-              <h4>Incoming Software Development Engineer at Flipkart</h4>
+          <h4><h5>Incoming Software Development Engineer</h5> Flipkart</h4>
               {/* </center> */}
           </div>
         </div>
@@ -42,7 +42,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
 
   <VerticalTimelineElement
     contentStyle={{ background: 'rgba( 255, 255, 255, 0.2 )' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.6 )' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.2 )' }}
     date="July, 2020 - December, 2020"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={
@@ -50,7 +50,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
     }
   >
   <div className="row">
-          <div className="col-5 align-self-center">
+          <div className="col-4 align-self-center">
           <img
                 className="rounded"
                 src={draupIcon}
@@ -59,7 +59,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
               />
           </div>
 
-          <div className="col-7 align-self-center">
+          <div className="col-8 align-self-center">
           {/* <center> */}
           <h4>Draup</h4>
           <h5>Software Development Intern</h5>
@@ -71,7 +71,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
   
   {/* <VerticalTimelineElement
     contentStyle={{ background: 'rgba( 255, 255, 255, 0.2 )' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.6 )' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.2 )' }}
     date="March, 2020 - June, 2020"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={
@@ -79,7 +79,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
     }
   >
   <div className="row">
-          <div className="col-5 align-self-center">
+          <div className="col-4 align-self-center">
           <img
                 className="rounded"
                 src={dnIcon}
@@ -88,7 +88,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
               />
           </div>
 
-          <div className="col-7 align-self-center">
+          <div className="col-8 align-self-center">
           <h4>DataNest Ventures</h4>
           <h5>Co-Founder</h5>
           <h6>Gurgaon</h6>
@@ -98,7 +98,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
   
   <VerticalTimelineElement
     contentStyle={{ background: 'rgba( 255, 255, 255, 0.2 )' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.6 )' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.2 )' }}
     date="January, 2020 - May, 2020"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={
@@ -106,7 +106,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
     }
   >
   <div className="row">
-          <div className="col-5 align-self-center">
+          <div className="col-4 align-self-center">
           <img
                 className="rounded"
                 src={ceeriIcon}
@@ -115,7 +115,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
               />
           </div>
 
-          <div className="col-7 align-self-center">
+          <div className="col-8 align-self-center">
           {/* <center> */}
           <h4>CSIR-CEERI</h4>
           <h5>Deep Learning Research Intern</h5>
@@ -127,7 +127,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
 
   <VerticalTimelineElement
     contentStyle={{ background: 'rgba( 255, 255, 255, 0.2 )' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.6 )' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.2 )' }}
     date="May, 2019 - July, 2019"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={
@@ -135,7 +135,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
     }
   >
   <div className="row">
-          <div className="col-5 align-self-center">
+          <div className="col-4 align-self-center">
           <img
                 className="rounded"
                 src={smIcon}
@@ -144,7 +144,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
               />
           </div>
 
-          <div className="col-7 align-self-center">
+          <div className="col-8 align-self-center">
           <h4>Sun Mobility</h4>
           <h5>Software Development Intern</h5>
           <h6>Bangalore</h6>
