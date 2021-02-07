@@ -86,7 +86,7 @@ const repos = {
   heading: "Recent Projects",
   gitHubUsername: "manitbaser",
   reposLength: 0,
-  specificRepos: ["CoviFight", "manitbaser.github.io", "NNFL-Assignment-AlexNet", "Bingo", "Signed-Wallace-Multiplier", "Smart-Lighting-System-Proteus"],
+  specificRepos: ["CoviFight", "Foreground-Segmentation-for-Video-Sequences-with-Dynamic-Background", "manitbaser.github.io", "Smart-Lighting-System-Proteus", "Bingo", "Signed-Wallace-Multiplier"],
 };
 
 const articles = {
