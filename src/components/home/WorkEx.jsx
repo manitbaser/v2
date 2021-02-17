@@ -34,7 +34,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
 
           <div className="col-8 align-self-center">
           {/* <center> */}
-          <h4><h5>Incoming Software Development Engineer</h5> Flipkart</h4>
+          <h5>Incoming Software Development Engineer</h5><h4>Flipkart</h4>
               {/* </center> */}
           </div>
         </div>

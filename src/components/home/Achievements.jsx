@@ -30,7 +30,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
             href="https://d8it4huxumps7.cloudfront.net/uploads/certificates/flipkart_grid2/national_finalists_software-14.pdf"
             role="button"
           >
-            <i className="fas fa-angle-double-down"></i>
+           <i class="fas fa-rocket"></i>
           </a>
           <Card.Text>Secured a position in the top 3 teams in Noise Detection & Cancellation track and top 9 teams in the Grand Finale with more than 22,000 participants.</Card.Text>
         </Card.Body>
@@ -54,7 +54,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
             href="https://devpost.com/software/covifight?ref_content=user-portfolio&ref_feature=in_progress"
             role="button"
           >
-            <i className="fas fa-angle-double-down"></i>
+           <i class="fas fa-rocket"></i>
           </a>
           <Card.Text>Secured second position in the Real-time Communication and Prevention challenge. Organised by the European Innovation Council, with over 9000 participants and 2000 teams. The META Group awarded us with award money for our solution.
 </Card.Text>
@@ -79,7 +79,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
             href="https://theglobalhack.com/results/"
             role="button"
           >
-            <i className="fas fa-angle-double-down"></i>
+           <i class="fas fa-rocket"></i>
           </a>
           <Card.Text>Secured a position in the top 6 teams in the Crisis Response Track. Aimed to develop ideas to face the COVID- 19 crisis, with over 6000 participants from 100 countries.</Card.Text>
         </Card.Body>
@@ -104,7 +104,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
             href="https://devpost.com/software/covi_fight"
             role="button"
           >
-            <i className="fas fa-angle-double-down"></i>
+           <i class="fas fa-rocket"></i>
           </a>
           <Card.Text>Aimed at catalyzing student innovation in response to the unprecedented situation facing colleges and communities in the wake of the coronavirus pandemic. We secured the second position in the competition.</Card.Text>
       </div>
@@ -129,7 +129,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
             href="https://devpost.com/software/covi_fight"
             role="button"
           >
-            <i className="fas fa-angle-double-down"></i>
+           <i class="fas fa-rocket"></i>
           </a>
           <Card.Text>Aimed to develop and launch open-source code using AI and/or blockchain to combat COVID-19, reduce risks from future infectious outbreaks, and cope with the COVID-19 pandemic situation. The award is a year of Wolfram One Personal Edition and a one-year subscription to Wolfram Alpha Pro.</Card.Text>
         </Card.Body>
@@ -152,7 +152,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
             href="https://www.mic.gov.in/assets/wp_images/Shortlisted%20Teams%20for%20MHRD%20-%20Samadhan.pdf"
             role="button"
           >
-            <i className="fas fa-angle-double-down"></i>
+           <i class="fas fa-rocket"></i>
           </a>
           <Card.Text>The participants in this challenge were to design, simulate and develop such measures that can be made available to the government agencies, health services, hospitals and other services for quick solutions to the Coronavirus epidemic and other such calamities.</Card.Text>
         </Card.Body>

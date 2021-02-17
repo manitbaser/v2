@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useScrollPosition } from "../hooks/useScrollPosition";
 import useResizeObserver from "../hooks/useResizeObserver";
 import Navbar from "react-bootstrap/Navbar";
-import { mainBody, achievements, workEx, articles, repos, about, skills } from "../editable-stuff/config.js";
+import { mainBody, achievements, workEx, articles, repos, about, skills, publications } from "../editable-stuff/config.js";
 import Nav from "react-bootstrap/Nav";
 
 const Navigation = React.forwardRef((props, ref) => {
@@ -70,6 +70,16 @@ const Navigation = React.forwardRef((props, ref) => {
             >
             <center>
               Achievements
+              </center>
+            </Nav.Link>
+          )}
+          {publications.show && (
+            <Nav.Link
+              className={`nav-link lead ${ !isTop ? "navbarbuttons text-dark text-secondary" : "text-secondary"}`}
+              href={process.env.PUBLIC_URL + "/#publications"}
+            >
+            <center>
+              Publications
               </center>
             </Nav.Link>
           )}

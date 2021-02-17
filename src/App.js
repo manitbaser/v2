@@ -10,6 +10,7 @@ import {
   skills,
   getInTouch,
   articles,
+  publications,
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -18,6 +19,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Skills from "./components/home/Skills";
 import Articles from "./components/home/Articles";
+import Publication from "./components/home/Publication";
 import WorkEx from "./components/home/WorkEx"
 import Achievements from "./components/home/Achievements"
 import GetInTouch from "./components/home/GetInTouch.jsx";
@@ -75,6 +77,11 @@ const Home = React.forwardRef((props, ref) => {
         />
       )}
       <div id="stars"></div>
+      {publications.show && (
+        <Publication
+          heading={publications.heading}
+        />
+      )}
       {articles.show && (
         <Articles
           heading={articles.heading}

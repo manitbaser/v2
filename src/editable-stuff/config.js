@@ -95,6 +95,11 @@ const articles = {
   username: "manitbaser",
 };
 
+const publications = {
+  show: true,
+  heading: "Publications",
+};
+
 // SKILLS SECTION
 const skills = {
   show: true,
@@ -136,4 +141,4 @@ const getInTouch = {
 };
 
 
-export { achievements, workEx, navBar, articles, mainBody, about, repos, skills, getInTouch };
+export { achievements, workEx, navBar, articles, publications, mainBody, about, repos, skills, getInTouch };
