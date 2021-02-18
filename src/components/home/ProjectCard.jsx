@@ -40,7 +40,7 @@ const ProjectCard = ({ value }) => {
 const CardButtons = ({ svn_url }) => {
   return (
     <>
-      <a href={svn_url} target=" _blank" className="btn btn-outline-light">
+      <a href={svn_url} target=" _blank" className="btn btn-outline-dark">
         <i className="fab fa-github" /> Repo
       </a>
     </>

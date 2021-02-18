@@ -35,7 +35,7 @@ const ArticleCard = ({ value }) => {
 const CardButtons = ({ link }) => {
   return (
     <>
-      <a href={link} target=" _blank" className="btn btn-outline-light">
+      <a href={link} target=" _blank" className="btn btn-outline-dark">
         <i className="fab fa-medium" /> Article
       </a>
     </>

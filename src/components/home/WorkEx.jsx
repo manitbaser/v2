@@ -5,15 +5,15 @@ import 'react-vertical-timeline-component/style.min.css';
 
 const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
   return (
-    <Jumbotron fluid id="workex" className="bg-transparent text-light m-0">
+    <Jumbotron fluid id="workex" className="bg-transparent m-0">
         <h2 className="display-4 pb-5 text-center">{heading}</h2>
         <VerticalTimeline
           animate={false}
         >
 
   <VerticalTimelineElement
-    contentStyle={{ background: 'rgba( 255, 255, 255, 0.2 )' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.2 )' }}
+    contentStyle={{ background: 'rgba( 255, 255, 255, 0.25 )' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.25 )' }}
     // date="2010 - 2011"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff'}}
     icon={
@@ -41,8 +41,8 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
   </VerticalTimelineElement>
 
   <VerticalTimelineElement
-    contentStyle={{ background: 'rgba( 255, 255, 255, 0.2 )' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.2 )' }}
+    contentStyle={{ background: 'rgba( 255, 255, 255, 0.25 )' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.25 )' }}
     date="July, 2020 - December, 2020"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={
@@ -70,8 +70,8 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
   </VerticalTimelineElement>
   
   {/* <VerticalTimelineElement
-    contentStyle={{ background: 'rgba( 255, 255, 255, 0.2 )' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.2 )' }}
+    contentStyle={{ background: 'rgba( 255, 255, 255, 0.25 )' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.25 )' }}
     date="March, 2020 - June, 2020"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={
@@ -97,8 +97,8 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
   </VerticalTimelineElement> */}
   
   <VerticalTimelineElement
-    contentStyle={{ background: 'rgba( 255, 255, 255, 0.2 )' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.2 )' }}
+    contentStyle={{ background: 'rgba( 255, 255, 255, 0.25 )' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.25 )' }}
     date="January, 2020 - May, 2020"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={
@@ -126,8 +126,8 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
   </VerticalTimelineElement>
 
   <VerticalTimelineElement
-    contentStyle={{ background: 'rgba( 255, 255, 255, 0.2 )' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.2 )' }}
+    contentStyle={{ background: 'rgba( 255, 255, 255, 0.25 )' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgba( 255, 255, 255, 0.25 )' }}
     date="May, 2019 - July, 2019"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={

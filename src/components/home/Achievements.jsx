@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 
 const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, mhrdIcon}) => {
   return (
-    <Jumbotron fluid id="achievements" className="bg-transparent text-light m-0">
+    <Jumbotron fluid id="achievements" className="bg-transparent text-dark m-0">
         <h2 className="display-4 pb-5 text-center">{heading}</h2>
         <center>
    
