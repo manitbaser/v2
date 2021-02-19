@@ -37,7 +37,7 @@ const Home = React.forwardRef((props, ref) => {
       {/* <div className="bgstyle"> */}
       {/* <div style={{background: 'linear-gradient(65deg, #0d0a0b 0%, #000428 20%, #004e92 50%, #02aab0 80%, #00cdac 100%)',
           position:'center',}}> */}
-      <div style={{background: 'linear-gradient(105deg, #029CF5, #02d9f5, #02d9f5, #15EDED, #15EDED, #02d9f5, #02d9f5, #029CF5)'}}>
+      {/* <div style={{background: 'linear-gradient(105deg, #029CF5, #02d9f5, #02d9f5, #15EDED, #15EDED, #02d9f5, #02d9f5, #029CF5)'}}> */}
       {about.show && (
         <AboutMe
           heading={about.heading}
@@ -47,6 +47,7 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
+      <div style={{background: "-webkit-linear-gradient(150deg, #029CF5, #02d9f5, #02d9f5, #15EDED, #15EDED, #02d9f5, #02d9f5, #029CF5)"}}>
       {workEx.show && (
         <WorkEx
           heading={workEx.heading}
@@ -92,7 +93,6 @@ const Home = React.forwardRef((props, ref) => {
         <Skills
           heading={skills.heading}
           hardSkills={skills.hardSkills}
-          softSkills={skills.softSkills}
         />
       )}
       </div>

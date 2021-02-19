@@ -118,7 +118,8 @@ code {
   align-items:space-between;
   justify-content:space-between;
 
-  background: rgba( 255, 255, 255, 0.28);
+  // background: rgba( 255, 255, 255, 0.28);
+  background: -webkit-linear-gradient(120deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4));
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -128,8 +129,8 @@ code {
   height: calc(100% - 30px);
   &:hover {
     box-shadow: 0 2rem 3rem rgba($black, 0.175) !important;
-    transform: translateY(-2px);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transform: translateY(-1px);
+    transition: transform 0.1s, box-shadow 0.1s;
   }
 }
 
@@ -155,10 +156,8 @@ code {
 }
 
 .aboutme {
-  background: rgba( 255, 255, 255, 0.84 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
+  // background: rgba( 255, 255, 255, 0.84 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.4 );
 }
 
 .button {

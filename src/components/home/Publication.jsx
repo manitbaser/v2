@@ -20,7 +20,7 @@ const Publication = ({ heading}) => {
         {/* <hr /> */}
         <Card.Text>Modeling background and segmentation of foreground objects are techniques required for various video surveillance and related applications. We propose an intensity and colour based background modeling technique for pixel level foreground segmentation of video sequences with dynamic background. It models...</Card.Text>
         <center>
-          <a href="https://ieeexplore.ieee.org/document/9342267" role="button" className="btn btn-outline-dark">
+          <a href="https://ieeexplore.ieee.org/document/9342267" role="button" className="btn btn-outline-light text-dark">
         <i className="fas fa-rocket" /> Read More
       </a>
       </center>
@@ -37,7 +37,7 @@ const Publication = ({ heading}) => {
         {/* <hr /> */}
         <Card.Text>Automating object detection for surveillance purpose and threat detection is beneficial as it may compensate for the human error and will save time, which is of significant economic value. For the end-to-end classification process and feature extraction, the CNN approach requires large amounts of data...</Card.Text>
         <center>
-          <a href="https://ieeexplore.ieee.org/document/9342691" role="button" className="btn btn-outline-dark">
+          <a href="https://ieeexplore.ieee.org/document/9342691" role="button" className="btn btn-outline-light text-dark">
         <i className="fas fa-rocket" /> Read More
       </a>
       </center>
