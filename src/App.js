@@ -15,7 +15,7 @@ import {
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
 import Project from "./components/home/Project";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Skills from "./components/home/Skills";
 import Articles from "./components/home/Articles";
@@ -34,10 +34,7 @@ const Home = React.forwardRef((props, ref) => {
         icons={mainBody.icons}
         ref={ref}
       />
-      {/* <div className="bgstyle"> */}
-      {/* <div style={{background: 'linear-gradient(65deg, #0d0a0b 0%, #000428 20%, #004e92 50%, #02aab0 80%, #00cdac 100%)',
-          position:'center',}}> */}
-      {/* <div style={{background: 'linear-gradient(105deg, #029CF5, #02d9f5, #02d9f5, #15EDED, #15EDED, #02d9f5, #02d9f5, #029CF5)'}}> */}
+      <div style={{background: "-webkit-linear-gradient(150deg, #029CF5, #02d9f5, #02d9f5, #15EDED, #15EDED, #02d9f5, #02d9f5, #029CF5)"}}>
       {about.show && (
         <AboutMe
           heading={about.heading}
@@ -47,7 +44,7 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
-      <div style={{background: "-webkit-linear-gradient(150deg, #029CF5, #02d9f5, #02d9f5, #15EDED, #15EDED, #02d9f5, #02d9f5, #029CF5)"}}>
+      
       {workEx.show && (
         <WorkEx
           heading={workEx.heading}
@@ -95,6 +92,13 @@ const Home = React.forwardRef((props, ref) => {
           hardSkills={skills.hardSkills}
         />
       )}
+      {getInTouch.show && (
+          <GetInTouch
+            heading={getInTouch.heading}
+            message={getInTouch.message}
+            email={getInTouch.email}
+          />
+        )}
       </div>
     </>
   );
@@ -107,7 +111,7 @@ const App = () => {
     <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
       {navBar.show && <Navbar ref={titleRef} />}
       <Route path="/" exact component={() => <Home ref={titleRef} />} />
-      <Footer>
+      {/* <Footer>
         {getInTouch.show && (
           <GetInTouch
             heading={getInTouch.heading}
@@ -115,7 +119,7 @@ const App = () => {
             email={getInTouch.email}
           />
         )}
-      </Footer>
+      </Footer> */}
     </BrowserRouter>
   );
 };

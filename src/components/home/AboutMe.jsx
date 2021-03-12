@@ -1,4 +1,5 @@
 import React from "react";
+import Jumbotron from "react-bootstrap/Jumbotron";
 
 const pictureLinkRegex = new RegExp(
   /[(http(s)?):(www.)?a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/
@@ -16,7 +17,8 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
   }, [link]);
 
   return (
-    <div id="aboutme" className="jumbotron aboutme jumbotron-fluid m-0">
+    <Jumbotron fluid id="aboutme" className="bg-transparent text-light min-vh-100 m-0">
+    <div className="jumbotron bg-transparent jumbotron-fluid m-0">
       <div className="container container-fluid">
         <div className="row">
           <div className="col-5 d-none d-lg-block align-self-center">
@@ -34,6 +36,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
           <div className={`col-lg-${showPic ? "7" : "12"}`}>
             <h2 className="display-4 mb-5 text-center">{heading}</h2>
             <p className="lead text-center">{message}</p>
+            <br></br><br></br>
             {resume && (
               <p className="lead text-center">
                 <a
@@ -52,6 +55,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
         </div>
       </div>
     </div>
+    </Jumbotron>
   );
 };
 

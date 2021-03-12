@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
   return (
-    <Jumbotron fluid id="workex" className="bg-transparent m-0">
+    <Jumbotron fluid id="workex" className="bg-transparent min-vh-100 m-0">
     <Container fluid className="timeline-section">
           <Container>
             <Row className="timeline">
