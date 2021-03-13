@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
-import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
 import axios from "axios";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const ProjectCard = ({ value }) => {
   const {
@@ -19,13 +20,19 @@ const ProjectCard = ({ value }) => {
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
           <Card.Text>{(description)?description:"" || <Skeleton count={3} />} </Card.Text>
-          {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
           <hr />
+          <Row>
+          <Col md={3}>
+          {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
+          </Col>
+          <Col md={9}>
           {languages_url ? (
             <Language languages_url={languages_url} repo_url={svn_url} />
           ) : (
             <Skeleton count={3} />
           )}
+          </Col>
+          </Row>
           {value ? (
             <CardFooter star_count={stargazers_count} repo_url={svn_url} pushed_at={pushed_at} />
           ) : (

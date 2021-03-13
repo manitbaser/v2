@@ -20,6 +20,8 @@ const GetInTouch = ({ heading, message, email }) => {
           Manit Baser
         </a>{" "}
         using <i className="fab fa-react" />
+        <br></br>
+        <br></br>
     </Container>
   );
 };
