@@ -17,7 +17,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
   }, [link]);
 
   return (
-    <Jumbotron fluid id="aboutme" className="bg-transparent text-light min-vh-100 m-0">
+    <Jumbotron fluid id="aboutme" className="bg-transparent text-dark min-vh-100 m-0">
     <div className="jumbotron bg-transparent jumbotron-fluid m-0">
       <div className="container container-fluid">
         <div className="row">

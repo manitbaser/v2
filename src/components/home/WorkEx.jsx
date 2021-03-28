@@ -9,7 +9,7 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
     <Container fluid className="timeline-section">
           <Container>
             <Row className="timeline">
-            <Col md={5} className="text-center align-self-center">
+            <Col md={5} className="text-center text-dark align-self-center">
             <p className="display-4">{heading}</p>
             </Col>
             <Col md={7}>
