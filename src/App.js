@@ -34,7 +34,8 @@ const Home = React.forwardRef((props, ref) => {
         icons={mainBody.icons}
         ref={ref}
       />
-      <div style={{background: "-webkit-linear-gradient(150deg, #029CF5, #02d9f5, #02d9f5, #02d9f5, #02d9f5, #029CF5)"}}>
+      {/* <div style={{background: "-webkit-linear-gradient(150deg, #029CF5, #02d9f5, #02d9f5, #02d9f5, #02d9f5, #029CF5)"}}> */}
+      <div style={{background: "-webkit-linear-gradient(90deg, #000000, #000000, #000000, #015871)"}}>
       {about.show && (
         <AboutMe
           heading={about.heading}

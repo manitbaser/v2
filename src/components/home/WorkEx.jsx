@@ -9,14 +9,14 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
     <Container fluid className="timeline-section">
           <Container>
             <Row className="timeline">
-            <Col md={5} className="text-center text-dark align-self-center">
+            <Col md={5} className="text-center text-light align-self-center">
             <p className="display-4">{heading}</p>
             </Col>
             <Col md={7}>
                 <WorkExTemplate
                   title="Incoming Software Development Engineer"
                   company="Flipkart"
-                  startdate="July, 2021"
+                  startdate="June, 2021"
                   img={fkIcon}
                 />
                 <WorkExTemplate

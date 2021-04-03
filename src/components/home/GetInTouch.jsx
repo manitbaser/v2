@@ -1,28 +1,29 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
+import Jumbotron from "react-bootstrap/Jumbotron";
 
 const GetInTouch = ({ heading, message, email }) => {
   return (
-  <Container className="text-center" >
-    <>
-      <h2 className="display-4 pb-3 text-center">{heading}</h2>
-      <p className="lead text-center pb-3">
+    <Jumbotron fluid className="bg-transparent text-center text-light m-0">
+    <Container>
+      <h2 className="display-4 pb-3">{heading}</h2>
+      <p className="lead pb-3">
         {message} <a href={`mailto:${email}`}>{email}</a>.
       </p>
-    </>
-    <i className="fas fa-code" /> with <i className="fas fa-heart" /> by{" "}
+    <i className="fas fa-code" style={{color: "#00cdac"}}/> with <i className="fas fa-heart" style={{color: "#ed4264"}}/> by{" "}
         <a
           className="badge badge-dark"
           rel="noopener"
           href="https://github.com/manitbaser"
           aria-label="My GitHub"
+          style={{color: "#6bccf3"}}
         >
           Manit Baser
         </a>{" "}
-        using <i className="fab fa-react" />
-        <br></br>
-        <br></br>
+        using <i className="fab fa-react"  style={{color: "#02aab0"}}/>
+        
     </Container>
+    </Jumbotron>
   );
 };
 

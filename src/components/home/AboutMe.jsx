@@ -17,7 +17,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
   }, [link]);
 
   return (
-    <Jumbotron fluid id="aboutme" className="bg-transparent text-dark min-vh-100 m-0">
+    <Jumbotron fluid id="aboutme" className="bg-transparent text-light min-vh-100 m-0">
     <div className="jumbotron bg-transparent jumbotron-fluid m-0">
       <div className="container container-fluid">
         <div className="row">
@@ -40,12 +40,13 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
             {resume && (
               <p className="lead text-center">
                 <a
-                  className="btn btn-lg text-dark button btn-outline-light"
+                  className="btn btn-lg btn-outline-light"
                   href={resume}
                   target="_blank"
                   rel="noreferrer noopener"
                   role="button"
                   aria-label="Resume/CV"
+                  style={{color: '#00cdac'}}
                 >
                   Resume
                 </a>

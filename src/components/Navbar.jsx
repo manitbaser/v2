@@ -50,16 +50,6 @@ const Navigation = React.forwardRef((props, ref) => {
               </center>
             </Nav.Link>
           )}
-          {publications.show && (
-            <Nav.Link
-              className={`nav-link lead navbarbuttons text-dark text-secondary`}
-              href={process.env.PUBLIC_URL + "/#publications"}
-            >
-            <center>
-              Publications
-              </center>
-            </Nav.Link>
-          )}
           {repos.show && (
             <Nav.Link
               className={`nav-link lead navbarbuttons text-dark text-secondary`}
@@ -70,16 +60,16 @@ const Navigation = React.forwardRef((props, ref) => {
               </center>
             </Nav.Link>
           )}
-          <Nav.Link
-            className={`nav-link lead navbarbuttons text-dark text-secondary`}
-            href={about.resume}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-          <center>
-            Resume
-            </center>
-          </Nav.Link>
+          {publications.show && (
+            <Nav.Link
+              className={`nav-link lead navbarbuttons text-dark text-secondary`}
+              href={process.env.PUBLIC_URL + "/#publications"}
+            >
+            <center>
+              Publications
+              </center>
+            </Nav.Link>
+          )}
           {articles.show && (
             <Nav.Link
               className={`nav-link lead navbarbuttons text-dark text-secondary`}
@@ -100,6 +90,16 @@ const Navigation = React.forwardRef((props, ref) => {
               </center>
             </Nav.Link>
           )}
+          <Nav.Link
+            className={`nav-link lead navbarbuttons text-dark text-secondary`}
+            href={about.resume}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+          <center>
+            Resume
+            </center>
+          </Nav.Link>
       </Nav>  
       </Navbar.Collapse>
     </Navbar>
