@@ -14,7 +14,7 @@ const Navigation = React.forwardRef((props, ref) => {
       className="fixed-top"
       expand="lg"
     >
-      <Navbar.Brand className={`nav-link lead navbarbuttons text-dark text-secondary`} href={process.env.PUBLIC_URL + "/#home"}>
+      <Navbar.Brand className={`nav-link lead navbarbuttons`} style={{color: '#02aab0'}} href={process.env.PUBLIC_URL + "/#home"}>
       {`<${mainBody.firstName} />`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
@@ -22,7 +22,7 @@ const Navigation = React.forwardRef((props, ref) => {
         <Nav className="mr-md-auto">
           {about.show && (
             <Nav.Link
-              className={`nav-link lead navbarbuttons text-dark text-secondary`}
+              className={`nav-link lead navbarbuttons`} style={{color: '#02aab0'}}
               href={process.env.PUBLIC_URL + "/#aboutme"}
             >
             <center>
@@ -32,7 +32,7 @@ const Navigation = React.forwardRef((props, ref) => {
           )}
           {workEx.show && (
             <Nav.Link
-              className={`nav-link lead navbarbuttons text-dark text-secondary`}
+              className={`nav-link lead navbarbuttons`} style={{color: '#02aab0'}}
               href={process.env.PUBLIC_URL + "/#workex"}
             >
             <center>
@@ -42,7 +42,7 @@ const Navigation = React.forwardRef((props, ref) => {
           )}
           {achievements.show && (
             <Nav.Link
-              className={`nav-link lead navbarbuttons text-dark text-secondary`}
+              className={`nav-link lead navbarbuttons`} style={{color: '#02aab0'}}
               href={process.env.PUBLIC_URL + "/#achievements"}
             >
             <center>
@@ -52,7 +52,7 @@ const Navigation = React.forwardRef((props, ref) => {
           )}
           {repos.show && (
             <Nav.Link
-              className={`nav-link lead navbarbuttons text-dark text-secondary`}
+              className={`nav-link lead navbarbuttons`} style={{color: '#02aab0'}}
               href={process.env.PUBLIC_URL + "/#projects"}
             >
             <center>
@@ -62,7 +62,7 @@ const Navigation = React.forwardRef((props, ref) => {
           )}
           {publications.show && (
             <Nav.Link
-              className={`nav-link lead navbarbuttons text-dark text-secondary`}
+              className={`nav-link lead navbarbuttons`} style={{color: '#02aab0'}}
               href={process.env.PUBLIC_URL + "/#publications"}
             >
             <center>
@@ -72,7 +72,7 @@ const Navigation = React.forwardRef((props, ref) => {
           )}
           {articles.show && (
             <Nav.Link
-              className={`nav-link lead navbarbuttons text-dark text-secondary`}
+              className={`nav-link lead navbarbuttons`} style={{color: '#02aab0'}}
               href={process.env.PUBLIC_URL + "/#articles"}
             >
             <center>
@@ -82,7 +82,7 @@ const Navigation = React.forwardRef((props, ref) => {
           )}
           {skills.show && (
             <Nav.Link
-            className={`nav-link lead navbarbuttons text-dark text-secondary`}
+            className={`nav-link lead navbarbuttons`} style={{color: '#02aab0'}}
               href={process.env.PUBLIC_URL + "/#skills"}
             >
             <center>
@@ -91,7 +91,7 @@ const Navigation = React.forwardRef((props, ref) => {
             </Nav.Link>
           )}
           <Nav.Link
-            className={`nav-link lead navbarbuttons text-dark text-secondary`}
+            className={`nav-link lead navbarbuttons`} style={{color: '#02aab0'}}
             href={about.resume}
             target="_blank"
             rel="noreferrer noopener"
