@@ -2,16 +2,10 @@ import React from "react";
 import Typist from "react-typist";
 import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import wave from "../../editable-stuff/wave.png";
 
 
 const MainBody = React.forwardRef(
   ({ gradient, title, message, icons }, ref) => {
-    const styles = {
-      paperContainer: {
-          backgroundImage: `url(${wave})`,
-      }
-    };
 
     return (
   <Jumbotron
@@ -57,10 +51,6 @@ const MainBody = React.forwardRef(
             <i className="fas fa-angle-double-down"></i>
           </a>
         </Container>
-        <div class="ocean">
-          <div class="wave"></div>
-          <div class="wave"></div>
-        </div>
       </Jumbotron>
       );
     }
