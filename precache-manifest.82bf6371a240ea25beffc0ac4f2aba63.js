@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b654f6c3603125620b422d325dad4ce2",
+    "revision": "0235becaf641fe1999ebc7fc1c374b4f",
     "url": "/index.html"
   },
   {
-    "revision": "d7a7c92b847687fb8d37",
+    "revision": "14fe7842b93e879625c0",
     "url": "/static/css/main.f27b0b6c.chunk.css"
   },
   {
-    "revision": "b62963ef1f1fa56801a1",
-    "url": "/static/js/2.57717665.chunk.js"
+    "revision": "f0972ace800faabfcec0",
+    "url": "/static/js/2.8a9ed14c.chunk.js"
   },
   {
     "revision": "29eb69a08ea4198f7b46e1db8a3d5045",
-    "url": "/static/js/2.57717665.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.8a9ed14c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d7a7c92b847687fb8d37",
-    "url": "/static/js/main.c642b2b5.chunk.js"
+    "revision": "14fe7842b93e879625c0",
+    "url": "/static/js/main.1c5a7e4d.chunk.js"
   },
   {
     "revision": "f52ba179432c3be28857",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/flipkart.2b44a65e.png"
   },
   {
-    "revision": "3a6b3fe3ee4161d958e6b81aaae432ec",
-    "url": "/static/media/manitbaser.3a6b3fe3.png"
+    "revision": "00d4802cdc46235ce151dc42fd525e76",
+    "url": "/static/media/manitbaser.00d4802c.png"
   },
   {
     "revision": "3d8482ed1e38e7e7220b5e07b52db606",
