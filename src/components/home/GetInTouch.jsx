@@ -6,6 +6,10 @@ const GetInTouch = ({ heading, message, email }) => {
   return (
     <Jumbotron fluid className="bg-transparent text-center text-light m-0">
     <Container>
+    <center>
+    <div class="border">
+    <div class="content">
+    <br></br>
       <h2 className="display-4 pb-3">{heading}</h2>
       <p className="lead pb-3">
         {message} <a href={`mailto:${email}`}>{email}</a>.
@@ -21,7 +25,11 @@ const GetInTouch = ({ heading, message, email }) => {
           Manit Baser
         </a>{" "}
         using <i className="fab fa-react"  style={{color: "#02aab0"}}/>
-        
+        <br></br>
+        <br></br>
+        </div>
+        </div>
+        </center>
     </Container>
     </Jumbotron>
   );

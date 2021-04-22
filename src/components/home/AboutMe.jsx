@@ -23,13 +23,15 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
         <div className="row">
           <div className="col-5 d-none d-lg-block align-self-center">
             {showPic && (
+              <div className="gradient_border_aboutme">
               <img
-                className="shadow-lg rounded-circle"
+                className="shadow-lg aboutme_img"
                 src={profilePicUrl}
                 alt="profilepicture"
                 width={imgSize}
                 height={imgSize}
               />
+              </div>
             )}
           </div>
 
