@@ -1,13 +1,13 @@
 import React from "react";
 import {Row, Col } from "react-bootstrap";
-import Card from "react-bootstrap/Card";
 
 function AchievementsTemplate(props) {
   return (
-    <div className="timeline-item text-light achievements">
-    <div className="p-2 achievementsCard rounded">
+    <div className="timeline-item text-light">
+    <div className="p-2 rounded">
     <Row>
-        <Col md={1.5} className="align-self-center">
+    <Col></Col>
+        <Col md={1.5}>
             <img
                 className="rounded"
                 src={props.img}
@@ -16,26 +16,30 @@ function AchievementsTemplate(props) {
                 style={{
                 backgroundColor: 'white',}}
             />
+            <br></br>
+            <br></br>
+            <center><a
+            className="btn btn-lg button_achievements"
+            href={props.link}
+            role="button"
+          >
+           <i class="fas fa-rocket"></i>
+          </a>
+          </center>
         </Col>
 
-        <Col md={10} className="align-self-center" style={{color: "#999999"}}>
-      <h6 className="timeline-title" style={{color: "#02aab0"}}>
+        <Col md={9} style={{color: "#aaaaaa"}}>
+      <h6 className="timeline-title" style={{color: "#00fafa"}}>
           {props.title1} | {props.title2} | {props.title3}
       </h6>
       
           {props.text}
           </Col>
+          <Col></Col>
           </Row>
           {/* <Row> */}
       {/* <Col md={0.2} align="right" className="align-self-center"> */}
-      <center><a
-            className="btn btn-outline-dark button-dark text-light"
-            href={props.link}
-            role="button"
-          >
-           <i class="fas fa-rocket" style={{color: '#00cdac'}}></i>
-          </a>
-          </center>
+      
       {/* </Col>  */}
       {/* </Row> */}
       

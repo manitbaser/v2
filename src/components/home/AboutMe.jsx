@@ -7,7 +7,7 @@ const pictureLinkRegex = new RegExp(
 
 const AboutMe = ({ heading, message, link, imgSize, resume }) => {
   const [profilePicUrl, setProfilePicUrl] = React.useState("");
-  const [showPic] = React.useState(Boolean(link));
+  // const [showPic] = React.useState(Boolean(link));
 
   React.useEffect(() => {
     if (link && !pictureLinkRegex.test(link)) {

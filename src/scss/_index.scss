@@ -117,27 +117,6 @@ code {
   border-radius: 10%;
 }
 
-.progress {
-  transform-origin: left;
-  & > * {
-    transform: scaleX(0);
-  }
-}
-.progress-bar-animation {
-  @extend .progress;
-  & > * {
-    animation: progress 1.5s ease-in-out forwards;
-  }
-}
-
-.button {
-  background: rgba( 255, 255, 255, 0.5 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border-radius: 10px;
-}
-
 .skills {
   background: rgba(69, 117, 117, 0.46);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
@@ -224,16 +203,6 @@ code {
   font-size: 12px;
   color: rgb(242, 242, 242);
 }
-.achievements {
-  padding-bottom: 10px;
-}
-
-.achievementsCard{
-  background: -webkit-linear-gradient(120deg, rgba(124, 124, 124, 0.4), rgba(114, 114, 114, 0.4));
-  align-items:space-between;
-  justify-content:space-between;
-  height: calc(100% - 20px);
-}
 
 .gradient_border_aboutme {
   --border-width: 5px;
@@ -274,12 +243,6 @@ code {
   border-radius: 50% ;
 }
 
-
-// // // // // // // // // // // 
-
-
-
-@import url("https://fonts.googleapis.com/css?family=Lato:300");
 
 
 .border {
@@ -346,5 +309,41 @@ code {
     box-shadow: 0 0 10px #255784, 0 0 40px #255784, 0 0 10px #255784;
     transition-delay: 0.1s;
     // border: 2px solid hsl(224, 85%, 66%);
+  }
+}
+
+.achievementsrow {
+  display: flex !important;
+}
+
+.achievementscolumnleft {
+  // background: -webkit-linear-gradient(120deg, rgba(124, 124, 124, 0.4), rgba(114, 114, 114, 0.4));
+  // margin-left:3%;
+  // margin-right:3%;
+  margin-bottom: 1%;
+  padding-left: 4%;
+  padding-right: 1%;
+}
+
+.achievementscolumnright {
+  // background: -webkit-linear-gradient(120deg, rgba(124, 124, 124, 0.4), rgba(114, 114, 114, 0.4));
+  // margin-left:3%;
+  // margin-right:3%;
+  margin-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 4%;
+}
+
+.button_achievements {
+  color: hsl(179, 85%, 66%);
+  font-size: 12px;
+  overflow: hidden;
+  transition: 0.2s;
+  border: 2px solid hsl(179, 85%, 66%);
+  &:hover {
+    color: #111111;
+    background: hsl(179, 85%, 66%);
+    box-shadow: 0 0 10px #255784, 0 0 40px #255784, 0 0 10px #255784;
+    transition-delay: 0.1s;
   }
 }
