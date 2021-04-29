@@ -58,13 +58,15 @@ code {
   color: white;
   padding-left: 5px;
   padding-right: 5px;
-  transition: all 0.8s;
+  transition: all 0.4s;
   margin: 4px;
+  // box-shadow: 0 0 10px #255784, 0 0 40px #255784, 0 0 10px #255784;
+  // text-shadow: 1.25px 0px 1px black, -1.25px 0px 1px black, 0px 1.25px 1px black, 0px -1.25px 1px black;
   &:hover {
     transform: scale(1.06);
     // overflow: hidden;
-    color: #000000;
-    text-shadow: 1.25px 0px 0px #7dfff4, -1.25px 0px 0px #7dfff4, 0px 1.25px 0px #7dfff4, 0px -1.25px 0px #7dfff4;
+    color: black;
+    text-shadow: 1.25px 0px 0px #00ffea, -1.25px 0px 0px #00ffea, 0px 1.25px 0px #00ffea, 0px -1.25px 0px #00ffea;
     padding-left: 5px;
     padding-right: 5px;
     -moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -99,8 +101,10 @@ code {
   justify-content:space-between;
   height: calc(100% - 20px);
   transform-style: preserve-3d;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px turquoise, 0 0 4px turquoise, 0 0 5px turquoise;
+  border: 1px solid rgb(0, 183, 255);
   border-radius: 15px;
+  z-index: 2;
   background: -webkit-linear-gradient(120deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(10px);
 }
@@ -115,6 +119,8 @@ code {
 
 .skills-icons {
   border-radius: 10%;
+  // box-shadow: 0 0 8px #6f02b8, 0 0 8px #6f02b8, 0 0 8px #6f02b8;
+
 }
 
 .skills {
@@ -132,8 +138,8 @@ code {
   border-radius: 10px;
   padding-left: 1%;
   padding-right: 1%;
-  margin-left:1%;
-  margin-right:1%;
+  margin-left: 1.6vw;
+  margin-right:1.6vw;
   color: #02aab0 !important;
   border: 2px solid #11e2df;
   &:hover {
@@ -312,38 +318,72 @@ code {
   }
 }
 
-.achievementsrow {
-  display: flex !important;
-}
+// .achievementsrow {
+//   display: flex !important;
+// }
 
 .achievementscolumnleft {
   // background: -webkit-linear-gradient(120deg, rgba(124, 124, 124, 0.4), rgba(114, 114, 114, 0.4));
   // margin-left:3%;
   // margin-right:3%;
-  margin-bottom: 1%;
-  padding-left: 4%;
-  padding-right: 1%;
+  margin-bottom: 1.6%;
+  // padding-left: 4%;
+  // padding-right: 1%;
 }
 
 .achievementscolumnright {
   // background: -webkit-linear-gradient(120deg, rgba(124, 124, 124, 0.4), rgba(114, 114, 114, 0.4));
   // margin-left:3%;
   // margin-right:3%;
-  margin-bottom: 1%;
-  padding-left: 1%;
-  padding-right: 4%;
+  margin-bottom: 1.6%;
+  // padding-left: 1%;
+  // padding-right: 4%;
 }
 
 .button_achievements {
-  color: hsl(179, 85%, 66%);
+  color: white;
+  // color: black;
+  // background: white;
+  background: black;
   font-size: 12px;
   overflow: hidden;
   transition: 0.2s;
   border: 2px solid hsl(179, 85%, 66%);
   &:hover {
     color: #111111;
+    // color: white;
     background: hsl(179, 85%, 66%);
+    border: 2px solid hsl(179, 85%, 66%);
     box-shadow: 0 0 10px #255784, 0 0 40px #255784, 0 0 10px #255784;
+  }
+}
+
+.achievements_background {
+  border-radius: 15px;
+  // background-color:rgba(0, 255, 251, 0.2);
+  background-color: rgb(2, 51, 51);
+  border: 2px solid #00ccff;
+  box-shadow: 0 0 10px #255784, 0 0 40px #255784, 0 0 10px #255784;
+}
+
+.achievements_images {
+  margin-bottom: 4%;
+  border: 2px solid hsl(179, 100%, 50%);
+}
+
+.down_button {
+  color: black;
+  background-color: white;
+  font-size: 20px;
+  overflow: hidden;
+  transition: 0.2s;
+  // border: 1px solid black;
+  &:hover {
+    border: 2px solid hsl(179, 85%, 66%);
+    color: #000000;
+    background: hsl(179, 85%, 66%);
+    box-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
     transition-delay: 0.1s;
+    // border: 2px solid hsl(224, 85%, 66%);
   }
 }

@@ -9,14 +9,14 @@ function AchievementsTemplate(props) {
     <Col></Col>
         <Col md={1.5}>
             <img
-                className="rounded"
+                className="rounded achievements_images"
                 src={props.img}
                 width={100}
                 height={100}
                 style={{
                 backgroundColor: 'white',}}
             />
-            <br></br>
+            {/* <br></br> */}
             <br></br>
             <center><a
             className="btn btn-lg button_achievements"
@@ -28,7 +28,7 @@ function AchievementsTemplate(props) {
           </center>
         </Col>
 
-        <Col md={9} style={{color: "#aaaaaa"}}>
+        <Col md={9} style={{color: "#dddddd"}}>
       <h6 className="timeline-title" style={{color: "#00fafa"}}>
           {props.title1} | {props.title2} | {props.title3}
       </h6>

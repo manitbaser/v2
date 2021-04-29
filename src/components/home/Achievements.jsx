@@ -17,6 +17,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
             <Row className="achievementsrow" >
             {/* <Col md={1}></Col> */}
               <Col md={6} className="achievementscolumnleft">
+              <div className="achievements_background">
                 <AchievementsTemplate
                   title1="GRiD 2.0"
                   title2="National Finalist"
@@ -25,10 +26,12 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
                   img={fkIcon}
                   text="Secured a position in the top 3 teams in Noise Detection & Cancellation track and top 9 teams in the Grand Finale with more than 22,000 participants."
                 />
+                </div>
               </Col>
               {/* <Col md={1}></Col> */}
               {/* <Col md={1}></Col> */}
               <Col md={6} className="achievementscolumnright">
+              <div className="achievements_background">
                 <AchievementsTemplate
                   title1="#EUvsVirus"
                   title2="Global Challenge Winners"
@@ -37,12 +40,14 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
                   img={euIcon}
                   text="Team CoviFight | Secured second position in the Real-time Communication and Prevention track. Organised by the European Innovation Council, with over 9000 participants. The META Group awarded us with award money."
                 />
+                </div>
               </Col>
               {/* <Col md={1}></Col> */}
               </Row>
               <Row className="achievementsrow" >
               {/* <Col md={1}></Col> */}
               <Col md={6} className="achievementscolumnleft">
+              <div className="achievements_background">
                 <AchievementsTemplate
                   title1="The Global Hack"
                   link="https://theglobalhack.com/results/"
@@ -51,8 +56,10 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
                   img={tghIcon}
                   text="Team CoviFight | Secured a position in the top 6 teams in the Crisis Response Track. Aimed to develop ideas to face the COVID- 19 crisis, with over 6000 participants from 100 countries."
                 />
+                </div>
                 </Col>
                 <Col md={6} className="achievementscolumnright">
+                <div className="achievements_background">
                 <AchievementsTemplate
                   title1="The Resiliency Challenge"
                   text="Team CoviFight | Aimed at catalyzing student innovation in response to the unprecedented situation facing colleges and communities in the wake of the coronavirus pandemic. We secured the second position in the competition."
@@ -61,12 +68,14 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
                   link="https://devpost.com/f20170370?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
                   img={buIcon}
                 />
+                </div>
                 </Col>
                 {/* <Col md={1}></Col> */}
                 </Row>
                 <Row className="achievementsrow" >
                 {/* <Col md={1}></Col> */}
                 <Col md={6} className="achievementscolumnleft">
+                <div className="achievements_background">
                 <AchievementsTemplate
                   title1="COVID19 Hack Challenge"
                   title2="The Wolfram Award"
@@ -75,8 +84,10 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
                   img={woflramIcon}
                   link="https://devpost.com/f20170370?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
                 />
+                </div>
                 </Col>
                 <Col md={6} className="achievementscolumnright">
+                <div className="achievements_background">
                 <AchievementsTemplate
                   title1="MHRD Samadhan Challenge"
                   text="Participants in this challenge were to design, simulate and develop measures that can be made available to government agencies and health services for quick solutions to the Covid-19 epidemic and other calamities."
@@ -85,6 +96,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
                   link="https://www.mic.gov.in/assets/wp_images/Shortlisted%20Teams%20for%20MHRD%20-%20Samadhan.pdf"
                   img={mhrdIcon}
                 />
+                </div>
                 </Col>
                 {/* <Col md={1}></Col> */}
             </Row>
