@@ -3,12 +3,10 @@ import {Row, Col } from "react-bootstrap";
 
 function AchievementsTemplate(props) {
   return (
-    <div className="timeline-item text-light">
-    <div className="p-2 rounded">
-    <Row>
-    <Col></Col>
-        <Col md={1.5}>
-            <img
+<div class="level1">
+       <div class="face face1">
+         <div class="level2">
+         <img
                 className="rounded achievements_images"
                 src={props.img}
                 width={100}
@@ -16,9 +14,16 @@ function AchievementsTemplate(props) {
                 style={{
                 backgroundColor: 'white',}}
             />
-            {/* <br></br> */}
-            <br></br>
-            <center><a
+           <h3>{props.title1}<br></br>{props.title2}<br></br>{props.title3}</h3>
+          <a className="down_achievements_button">
+            <i className="fas  fa-angle-double-down"></i>
+          </a>
+         </div>
+       </div>
+       <div class="face face2">
+         <div className="text-light">
+           <p>{props.text}</p>
+           <center><a
             className="btn btn-lg button_achievements"
             href={props.link}
             role="button"
@@ -26,24 +31,8 @@ function AchievementsTemplate(props) {
            <i class="fas fa-rocket"></i>
           </a>
           </center>
-        </Col>
-
-        <Col md={9} style={{color: "#dddddd"}}>
-      <h6 className="timeline-title" style={{color: "#00fafa"}}>
-          {props.title1} | {props.title2} | {props.title3}
-      </h6>
-      
-          {props.text}
-          </Col>
-          <Col></Col>
-          </Row>
-          {/* <Row> */}
-      {/* <Col md={0.2} align="right" className="align-self-center"> */}
-      
-      {/* </Col>  */}
-      {/* </Row> */}
-      
-      </div>
+         </div>
+       </div>
     </div>
   );
 }
