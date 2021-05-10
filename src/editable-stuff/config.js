@@ -11,7 +11,7 @@ const mainBody = {
   firstName: "Manit",
   middleName: "",
   lastName: "Baser",
-  message: "Senior, BITS Pilani | Developer | Deep Learning Enthusiast",
+  message: "BITS Pilani | Flipkart | Developer",
   icons: [
     {
       image: "fa-github",
@@ -86,7 +86,7 @@ const repos = {
   heading: "Recent Projects",
   gitHubUsername: "manitbaser",
   reposLength: 0,
-  specificRepos: ["CoviFight", "Foreground-Segmentation-for-Video-Sequences-with-Dynamic-Background", "Bingo", "Signed-Wallace-Multiplier"],
+  specificRepos: ["CoviFight", "Foreground-Segmentation-for-Video-Sequences-with-Dynamic-Background", "Interactive-Voice-Response-Chatbot", "Signed-Wallace-Multiplier", "Cross_Sell-Up_Sell-Recommender-System", "Bingo"],
 };
 
 const articles = {

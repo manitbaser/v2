@@ -15,6 +15,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(29, 28, 28)
 }
 
 code {
@@ -306,15 +307,15 @@ code {
 
 .button_resume {
   color: hsl(179, 85%, 66%);
-  font-size: 24px;
+  font-size: 20px;
   overflow: hidden;
   transition: 0.2s;
   border: 2px solid hsl(179, 85%, 66%);
   &:hover {
     color: #111111;
-    background: hsl(179, 85%, 66%);
-    box-shadow: 0 0 10px #255784, 0 0 40px #255784, 0 0 10px #255784;
-    transition-delay: 0.1s;
+    background: hsl(179, 100%, 50%);
+    box-shadow: 0 0 10px #255784, 0 0 10px #255784, 0 0 10px #255784;
+    // transition-delay: 0.1s;
     // border: 2px solid hsl(224, 85%, 66%);
   }
 }
@@ -328,25 +329,14 @@ code {
   transition: 0.2s;
   // border: 1px solid black;
   &:hover {
-    border: 2px solid hsl(179, 85%, 66%);
+    border: 1px solid hsl(179, 85%, 66%);
     color: #ffffff;
-    background: hsl(179, 85%, 66%);
+    background: black;
     // box-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
     transition-delay: 0.1s;
     // border: 2px solid hsl(224, 85%, 66%);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 // Achievements Section // // // // // // // // // // // // 
 
@@ -379,7 +369,7 @@ code {
 
 .L1 .level1 .face{
   width: 350px;
-  height: 200px;
+  height: 210px;
   transition:.4s;
 }
 
@@ -392,23 +382,21 @@ code {
   align-items: center;
   z-index: 1;
   border-radius: 10px;
-  transform: translateY(80px);
+  transform: translateY(20px);
 }
 
 .L1 .level1:hover .face.face1{
   z-index: 20;
   border-radius: 0%;
-  transform: translateY(-20px);
-  border: 4px solid turquoise;
+  transform: translateY(-85px);
+  background-color:  rgb(0, 255, 213);
   box-shadow:
-    inset 0 0 60px whitesmoke,
-    inset 20px 0 80px #f0f,
+    inset 20px 0 80px rgb(0, 217, 255),
     inset -20px 0 80px #0ff,
-    inset 20px 0 300px #f0f,
-    inset -20px 0 300px #0ff;
-    // 0 0 50px #fff,
-    // -10px 0 80px #f0f,
-    // 10px 0 80px #0ff;
+    inset 20px 0 300px rgb(0, 255, 213),
+    0 0 50px #fff,
+    10px 0 20px #0ff;
+    color: #1a1c22;
    
 }
 
@@ -422,7 +410,6 @@ code {
 
 .L1 .level1:hover .face.face1 .level2{
   opacity: 1;
- 
 }
 .L1 .level1:hover .down_achievements_button {
   opacity: 0;
@@ -437,7 +424,6 @@ code {
 
 .L1 .level1 .face.face1 .level2 h3{
   font-size: 1em;
-  color: white;
   text-align: center;
 }
 
@@ -454,21 +440,22 @@ code {
    padding: 20px;
   // box-sizing: border-box;
   box-shadow: 0 20px 50px rgba(0,0,0,.8);
-  transform: translateY(-120px);
+  transform: translateY(-190px);
   border-radius: 10px;
 }
 
 .L1 .level1:hover .face.face2{
   border-radius: 0%;
-    transform: translateY(-20px);
-    z-index: 10;
+  transform: translateY(-89px);
+  border: 4px solid turquoise;
+  z-index: 10;
 }
 
 // // 
 
 .L2 .level1 .face{
   width: 350px;
-  height: 200px;
+  height: 210px;
   transition:.4s;
 }
 
@@ -481,23 +468,21 @@ code {
   align-items: center;
   z-index: 1;
   border-radius: 10px;
-  transform: translateY(-80px);
+  transform: translateY(-150px);
 }
 
 .L2 .level1:hover .face.face1{
   z-index: 20;
-  border-radius: 0px;
-  transform: translateY(-180px);
-  border: 4px solid turquoise;
+  border-radius: 0%;
+  transform: translateY(-265px);
+  background-color:  rgb(0, 255, 213);
   box-shadow:
-    inset 0 0 60px whitesmoke,
-    inset 20px 0 80px #f0f,
+    inset 20px 0 80px rgb(0, 217, 255),
     inset -20px 0 80px #0ff,
-    inset 20px 0 300px #f0f,
-    inset -20px 0 300px #0ff;
-    // 0 0 50px #fff,
-    // -10px 0 80px #f0f,
-    // 10px 0 80px #0ff;
+    inset 20px 0 300px rgb(0, 255, 213),
+    0 0 50px #fff,
+    10px 0 20px #0ff;
+    color: #1a1c22;
    
 }
 
@@ -528,7 +513,7 @@ code {
 
 .L2 .level1 .face.face1 .level2 h3{
   font-size: 1em;
-  color: white;
+  // color: white;
   text-align: center;
 }
 
@@ -545,12 +530,13 @@ code {
    padding: 20px;
   box-shadow: 0 20px 50px rgba(0,0,0,.8);
   border-radius: 10px;
-  transform: translateY(-280px);
+  transform: translateY(-360px);
 }
 
 .L2 .level1:hover .face.face2{
   border-radius: 0px;
-  transform: translateY(-180px);
+  transform: translateY(-270px);
+  border: 4px solid turquoise;
 }
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
 

@@ -21,7 +21,7 @@ function AchievementsTemplate(props) {
          </div>
        </div>
        <div class="face face2">
-         <div className="text-light">
+         <div>
            <p>{props.text}</p>
            <center><a
             className="btn btn-lg button_achievements"

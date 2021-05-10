@@ -32,8 +32,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
               />
               </div>
           </div>
-
-          <div className={`col-lg-${"7"}`}>
+          <div className={`col-lg-${"7"} test`}>
             <h2 className="display-4 mb-5 text-center">{heading}</h2>
             <p className="lead text-center">{message}</p>
             <br></br><br></br>
@@ -52,10 +51,10 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
                 </a>
               </p>
             )}
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </Jumbotron>
   );
 };
