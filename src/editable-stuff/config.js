@@ -49,7 +49,7 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/manitbaser.png"),
+  imageLink: require("../editable-stuff/manitbaser.jpg"),
   imageSize: 375,
   message:
     "My name is Manit Baser. I’m a final year undergraduate at Birla Institute of Technology and Science, Pilani, India, pursuing B.E. (Hons.) in Electrical and Electronics. I am intrigued by the applications of deep learning and software development to tackle real-world problems, and I am determined to continuously learn and grow and make the world a better place using my knowledge and experience.",
@@ -65,7 +65,7 @@ const workEx = {
   show: true,
   heading: "Work Experience",
   draupIcon: require("../editable-stuff/draup.jpg"),
-  ceeriIcon: require("../editable-stuff/ceeri.jpg"),
+  DNIcon: require("../editable-stuff/datanest.png"),
   smIcon: require("../editable-stuff/sun.png"),
   fkIcon: require("../editable-stuff/flipkart.png"),
 };
@@ -78,6 +78,7 @@ const achievements = {
   tghIcon: require("../editable-stuff/tgh.png"),
   woflramIcon: require("../editable-stuff/wolfram.png"),
   buIcon: require("../editable-stuff/bu.jpg"),
+  ABIcon: require("../editable-stuff/ABinBev.png"),
   mhrdIcon: require("../editable-stuff/mhrd.jpg"),
 };
 

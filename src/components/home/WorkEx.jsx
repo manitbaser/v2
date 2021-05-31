@@ -3,13 +3,14 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import WorkExTemplate from "./WorkExTemplate";
 import { Container, Row, Col } from "react-bootstrap";
 
-const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
+const WorkEx = ({ heading, draupIcon, DNIcon, smIcon, fkIcon}) => {
   return (
-    <Jumbotron fluid id="workex" className="bg-transparent min-vh-100 m-0">
+
+    <Jumbotron fluid id="workex" className="bg-transparent min-vh-100 m-0 d-flex text-light align-items-center flex-wrap">
     <Container fluid className="timeline-section">
           <Container>
             <Row className="timeline">
-            <Col md={5} className="text-center text-light align-self-center">
+            <Col md={5} className="text-center align-self-center">
             <p className="display-4">{heading}</p>
             </Col>
             <Col md={7}>
@@ -27,11 +28,11 @@ const WorkEx = ({ heading, draupIcon, ceeriIcon, smIcon, fkIcon}) => {
                   img={draupIcon}
                 />
                 <WorkExTemplate
-                  title="Deep Learning Research Intern"
-                  company="CSIR-CEERI"
-                  enddate="May, 2020"
-                  startdate="Jan, 2020"
-                  img={ceeriIcon}
+                  title="Co-Founder"
+                  company="DataNest Ventures"
+                  enddate="July, 2020"
+                  startdate="Feb, 2020"
+                  img={DNIcon}
                 />
                 <WorkExTemplate
                   title="Software Development Intern"

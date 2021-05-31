@@ -1,41 +1,41 @@
 import React from "react";
 import {Row, Col } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
 
 function AchievementsTemplate(props) {
   return (
-<div class="level1">
-       <div class="face face1">
-         <div class="level2">
+<Card className="achievementscard">
+<Row>
+<Col md={4}>
+<center>
          <img
-                className="rounded achievements_images"
+                className="achievements_images"
                 src={props.img}
                 width={100}
                 height={100}
                 style={{
                 backgroundColor: 'white',}}
             />
-           <h3>{props.title1}<br></br>{props.title2}<br></br>{props.title3}</h3>
-          <a className="down_achievements_button">
-            <i className="fas  fa-angle-double-down"></i>
-          </a>
-         </div>
-       </div>
-       <div class="face face2">
-         <div>
-           <p>{props.text}</p>
-           <center><a
+            </center>
+            </Col>
+            <Col md={8} className="align-self-center">
+           <h6>{props.title1}<br></br>{props.title2}<br></br>{props.title3}</h6>
+           </Col>
+           </Row>
+           <p>{props.text}
+           <center>
+           {props.title4}    <a
             className="btn btn-lg button_achievements"
             href={props.link}
             role="button"
           >
            <i class="fas fa-rocket"></i>
           </a>
-          </center>
-         </div>
-       </div>
-    </div>
+          </center></p>
+           
+         
+    </Card>
   );
 }
 
 export default AchievementsTemplate;
-

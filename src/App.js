@@ -34,9 +34,8 @@ const Home = React.forwardRef((props, ref) => {
         icons={mainBody.icons}
         ref={ref}
       />
+      
       {/* <div style={{background: "-webkit-linear-gradient(150deg, #029CF5, #02d9f5, #02d9f5, #02d9f5, #02d9f5, #029CF5)"}}> */}
-      {/* <div style={{background: "-webkit-linear-gradient(90deg, #111214, #111214, #111214, #111214)"}}> */}
-      <div style={{background: "#212327"}}>
       {about.show && (
         <AboutMe
           heading={about.heading}
@@ -46,17 +45,16 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
-      </div>
       {workEx.show && (
         <WorkEx
           heading={workEx.heading}
           draupIcon={workEx.draupIcon}
-          ceeriIcon={workEx.ceeriIcon}
+          DNIcon={workEx.DNIcon}
           smIcon={workEx.smIcon}
           fkIcon={workEx.fkIcon}
         />
       )}
-      {/* <div id="stars"></div> */}
+      <div id="stars"></div>
       {achievements.show && (
         <Achievements
           heading={achievements.heading}
@@ -65,6 +63,7 @@ const Home = React.forwardRef((props, ref) => {
           tghIcon={achievements.tghIcon}
           woflramIcon={achievements.woflramIcon}
           buIcon={achievements.buIcon}
+          ABIcon={achievements.ABIcon}
           mhrdIcon={achievements.mhrdIcon}
         />
       )}
@@ -76,7 +75,7 @@ const Home = React.forwardRef((props, ref) => {
           specfic={repos.specificRepos}
         />
       )}
-      {/* <div id="stars"></div> */}
+      <div id="stars"></div>
       {publications.show && (
         <Publication
           heading={publications.heading}
@@ -101,7 +100,6 @@ const Home = React.forwardRef((props, ref) => {
             email={getInTouch.email}
           />
         )}
-      {/* </div> */}
     </>
   );
 });

@@ -16,7 +16,8 @@ function WorkExTemplate(props) {
                 width={80}
                 height={80}
                 style={{
-                backgroundColor: 'white',}}
+                backgroundColor: 'white',
+                border: '2px solid #5f2c75'}}
             />
         </Col>
         <Col md={1}></Col>

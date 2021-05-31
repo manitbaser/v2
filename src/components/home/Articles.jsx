@@ -2,7 +2,9 @@ import React, { useState, useEffect, useCallback } from "react";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import ArticleCard from "./ArticleCard";
 import axios from "axios";
-
+import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
 
 const dummyArticle = {
   name: null,
@@ -41,12 +43,13 @@ const Articles = ({ heading }) => {
   }, [fetchRepos]);
 
   return (
-      <div id="articles">
-  <Jumbotron fluid id="projects" className="bg-transparent m-0">
-      {/* <div className="col-sm-6 mx-auto"> */}
+      // <div id="articles">
+  <Jumbotron fluid id="articles" className="bg-transparent min-vh-100 m-0 d-flex align-items-center flex-wrap">
+  <Container className="">
         <h2 className="display-4 pb-5 text-light text-center">{heading}</h2>
-        {/* <Col className="text-center"> */}
-        <center>
+        {/* <center> */}
+        <Row>
+        {/* <Col md={1}></Col> */}
           {projectsArray.length
             ? projectsArray.map((project, index) => (
                 <ArticleCard
@@ -62,11 +65,14 @@ const Articles = ({ heading }) => {
                   value={project}
                 />
               ))}
-              </center>
+              {/* <Col md={1}></Col> */}
+              </Row>
+              {/* </center> */}
         {/* </Col> */}
       {/* </div> */}
+      </Container>
     </Jumbotron>
-    </div>
+    // </div>
   );
 };
 

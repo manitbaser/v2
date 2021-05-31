@@ -11,15 +11,16 @@ const ArticleCard = ({ value }) => {
   } = value;
 
   return (
-    <Col md={5}>
-      <Card className="card mb-5 text-light text-center">
+    <Col>
+      <Card className="card mb-5 text-center">
         <Card.Body>
           <Card.Title as="h5">{title || <Skeleton />} </Card.Title>
           <div className="embed-responsive">
           <a href={link}>
             <img
                 className="shadow-lg rounded"
-                height="160"
+                height="100vh"
+                width="250vw"
                 src={thumbnail}
               />
               </a>
@@ -35,7 +36,7 @@ const ArticleCard = ({ value }) => {
 const CardButtons = ({ link }) => {
   return (
     <>
-      <a href={link} target=" _blank" className="btn btn-outline-light text-light">
+      <a href={link} target=" _blank" className="btn articlesbutton">
         <i className="fab fa-medium" /> Article
       </a>
     </>

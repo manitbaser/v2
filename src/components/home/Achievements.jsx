@@ -5,13 +5,12 @@ import Col from "react-bootstrap/Col";
 import AchievementsTemplate from "./AchievementsTemplate";
 import Container from "react-bootstrap/Container";
 
-const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, mhrdIcon}) => {
+const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, ABIcon, mhrdIcon}) => {
   return (
 
-    <Jumbotron fluid className="bg-transparent text-light min-vh-100 m-0 d-flex align-items-center flex-wrap" id="achievements">
+    <Jumbotron fluid className="bg-transparent min-vh-100 m-0 d-flex align-items-center flex-wrap" id="achievements">
         <Container>
-        <p className="display-4 text-center text-light align-self-center">{heading}</p>
-            <div class="L1">
+        <p className="display-4 text-light text-center align-self-center">{heading}</p>
             <Row>
             <Col>
                 <AchievementsTemplate
@@ -26,12 +25,41 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
             </Col>
             <Col>
                 <AchievementsTemplate
+                  title1="Maverick 2.0 Botathon"
+                  title2="2nd Runner-Up"
+                  title3="AB InBev"
+                  title4="Team UnScript"
+                  link="https://dare2compete.com/submissions-round/round-3-technical-prototype-submission-21979"
+                  img={ABIcon}
+                  text="Secured Second Runner-Up position in the Botathon's National Grand Finale, with more than 500 teams, and won a cash prize for our product."
+                />
+            
+            </Col>
+            <Col>
+                <AchievementsTemplate
                   title1="#EUvsVirus"
                   title2="Global Challenge Winners"
                   title3="European Commission"
+                  title4="Team CoviFight"
                   link="https://devpost.com/software/covifight?ref_content=user-portfolio&ref_feature=in_progress"
                   img={euIcon}
-                  text="Team CoviFight | Secured second position in the Real-time Communication and Prevention track. Organised by the European Innovation Council, with over 9000 participants. The META Group awarded us with award money."
+                  text="Secured second position in the Real-time Communication and Prevention track. Organised by the European Innovation Council, with over 9000 participants. The META Group awarded us with award money."
+                />
+            </Col>
+            </Row>
+            {/* </div> */}
+            {/* <div class="L1"> */}
+            <br></br>
+            <Row>
+            <Col>
+                <AchievementsTemplate
+                  title1="Maverick 2.0 Hackathon"
+                  title2="National Finalists"
+                  title3="AB InBev"
+                  title4="Team UnScript"
+                  link="https://dare2compete.com/submissions-round/round-3-technical-prototype-submission-21978"
+                  img={ABIcon}
+                  text="Secured a position in the top 9 teams in the Hackathon's National Grand Finale, with more than 750 teams, and showcased our product to business leaders of AB InBev."
                 />
             </Col>
             <Col>
@@ -40,32 +68,9 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
                   link="https://theglobalhack.com/results/"
                   title2="Global Finalists"
                   title3="Garage48"
+                  title4="Team CoviFight"
                   img={tghIcon}
-                  text="Team CoviFight | Secured a position in the top 6 teams in the Crisis Response Track. Aimed to develop ideas to face the COVID- 19 crisis, with over 6000 participants from 100 countries."
-                />
-            </Col>
-            </Row>
-            </div>
-            <div class="L2">
-            <Row>
-            <Col>
-                <AchievementsTemplate
-                  title1="The Resiliency Challenge"
-                  text="Team CoviFight | Aimed at catalyzing student innovation in response to the unprecedented situation facing colleges and communities in the wake of the coronavirus pandemic. We secured the second position in the competition."
-                  title2="Winners"
-                  title3="Boston University"
-                  link="https://devpost.com/f20170370?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
-                  img={buIcon}
-                />
-            </Col>
-            <Col>
-                <AchievementsTemplate
-                  title1="COVID19 Hack Challenge"
-                  title2="The Wolfram Award"
-                  title3="Wolfram Research"
-                  text="Team CoviFight | Aimed to develop and launch open-source code using AI and/or blockchain to combat COVID-19, reduce risks from future infectious outbreaks, and cope with the COVID-19 pandemic situation."
-                  img={woflramIcon}
-                  link="https://devpost.com/f20170370?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
+                  text="Secured a position in the top 6 teams in the Crisis Response Track. Aimed to develop ideas to face the COVID- 19 crisis, with over 6000 participants from 100 countries."
                 />
             </Col>
             <Col>
@@ -79,7 +84,33 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, m
                 />
             </Col>
             </Row>
-                </div>
+            <br></br>
+            <Row>
+            <Col>
+                <AchievementsTemplate
+                  title1="The Resiliency Challenge"
+                  title4="Team CoviFight"
+                  text="Aimed at catalyzing student innovation in response to the unprecedented situation facing colleges and communities in the wake of the coronavirus pandemic. We secured the second position in the competition."
+                  title2="Runner-Up"
+                  title3="Boston University"
+                  link="https://devpost.com/f20170370?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
+                  img={buIcon}
+                />
+            </Col>
+            <Col>
+                <AchievementsTemplate
+                  title1="COVID19 Hack Challenge"
+                  title2="The Wolfram Award"
+                  title3="Wolfram Research"
+                  title4="Team CoviFight"
+                  text="Aimed to develop and launch open-source code using AI and/or blockchain to combat COVID-19, reduce risks from future infectious outbreaks, and cope with the COVID-19 pandemic situation."
+                  img={woflramIcon}
+                  link="https://devpost.com/f20170370?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
+                />
+            </Col>
+            <Col></Col>
+            </Row>
+                {/* </div> */}
           </Container>
 
 

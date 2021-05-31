@@ -22,7 +22,6 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
       <div className="container container-fluid">
         <div className="row">
           <div className="col-5 d-none d-lg-block align-self-center align-content-center">
-              <div className="gradient_border_aboutme">
               <img
                 className="shadow-lg aboutme_img"
                 src={profilePicUrl}
@@ -30,7 +29,6 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
                 width={imgSize}
                 height={imgSize}
               />
-              </div>
           </div>
           <div className={`col-lg-${"7"} test`}>
             <h2 className="display-4 mb-5 text-center">{heading}</h2>
