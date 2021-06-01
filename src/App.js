@@ -27,6 +27,9 @@ import GetInTouch from "./components/home/GetInTouch.jsx";
 const Home = React.forwardRef((props, ref) => {
   return (
     <>
+    <div class="img" id="img-1"></div>
+    <div class="img" id="img-2"></div>
+    <div class="img" id="img-3"></div>
       <MainBody
         gradient={mainBody.gradientColors}
         title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}

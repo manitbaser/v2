@@ -15,7 +15,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #02aab0;
+  // background: #02aab0;
+  background: linear-gradient(135deg, #02aab0 40%, #2B7594 60%, #000000 100%);
 }
 
 code {
@@ -94,14 +95,19 @@ code {
 }
 
 .card {
+  background: rgba( 255, 255, 255, 0.5 );
+  // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  // backdrop-filter: blur( 8.0px );
+  // -webkit-backdrop-filter: blur( 8.0px );
+  border-radius: 10px;
+  // border: 1px solid rgba( 255, 255, 255, 0.18 );
+
   align-items:space-between;
   justify-content:space-between;
   height: calc(100% - 20px);
   transform-style: preserve-3d;
-  border-radius: 10px;
-  // background: -webkit-linear-gradient(120deg, rgba(233, 184, 184, 0.2), rgba(215, 145, 255, 0.2));
-  background: -webkit-linear-gradient(120deg, rgba(233, 184, 184, 0.2), rgba(255, 255, 255, 0.6));
-  background-color:  rgba(234, 0, 255,0.01);
+  // background: -webkit-linear-gradient(120deg, rgba(233, 184, 184, 0.2), rgba(255, 255, 255, 0.6));
+  // background-color:  rgba(234, 0, 255,0.01);
   // box-shadow:
     // inset 20px 0 80px rgb(0, 217, 255),
     // inset -20px 0 80px #0ff,
@@ -162,7 +168,7 @@ code {
 
 .navbar-white {
   // background-color: rgba(255, 255, 255, 0.96);
-  background: rgba(56, 211, 216, 0.6);
+  background: rgba(56, 211, 216, 0.4);
   backdrop-filter: blur( 20px );
   transition: background-color 0.1s;
 
@@ -222,7 +228,7 @@ code {
   // font-size: 5em;
   font-weight: 700;
   // color: #8f00d1;
-  color: #8b00e7;
+  color: #7a19bb;
 }
 
 .timeline .timeline-item {
@@ -365,7 +371,8 @@ code {
 }
 
 .projectsbutton {
-  background: rgb(230, 255, 255);
+  // background: rgb(230, 255, 255);
+  border: 1px solid black;
   &:hover {
     color: #ffffff;
     background: black;
@@ -377,7 +384,8 @@ code {
 
 
 .publicationsbutton {
-  background: rgb(230, 255, 255);
+  border: 1px solid black;
+  // background: rgb(230, 255, 255);
   &:hover {
     color: #ffffff;
     background: black;
@@ -388,7 +396,8 @@ code {
 }
 
 .articlesbutton {
-  background: rgb(230, 255, 255);
+  // background: rgb(230, 255, 255);
+  border: 1px solid black;
   &:hover {
     color: #ffffff;
     background: black;
@@ -401,9 +410,10 @@ code {
 // Achievements Section // // // // // // // // // // // // 
 
 .button_achievements {
-  color: white;
+  // color: white;
   // background: white;
-  background: #02aab0;
+  // background: #02aab0;
+  border: 1px solid black;
   overflow: hidden;
   font-size: 8px;
   // transition: 0.2s;
@@ -423,13 +433,79 @@ code {
 }
 
 
-.trapezium {
-  background-color: #333;
+.getintouch {
+  background-color: #000;
+  // background: linear-gradient(135deg, #2B7594 0%, #312d0f 100%);
+
   // border-bottom: 10vh solid #333;
-  border-top: 30vh solid #02aab0;
-  border-left: 30vw solid #333;
-  border-right: 30vw solid #333;
+  // border-top: 30vh solid #02aab0;
+  // border-left: 30vw solid #333;
+  // border-right: 30vw solid #333;
   // height: 0;
-  z-index: -100;
+  // z-index: -100;
   // width: 100px;
+}
+
+
+
+
+
+
+
+
+
+// html {
+  // background: linear-gradient(135deg, #2B7594 0%, #655900 100%);
+  // background: #bbb;
+  // fixed;
+  // overflow: hidden;
+//   font-family: 'Orbitron', sans-serif;
+// }
+
+
+
+.img {
+  position: fixed;
+  z-index: -100;
+  height: 2000vh;
+  width: 2000vw;
+  // top: -100vh;
+  top: -900vh;
+  left: -900vw;
+  animation-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750);
+  animation-name: float;
+  animation-iteration-count: infinite;
+}
+
+#img-1 {
+  opacity: 0.12;
+  background: url('https://image.ibb.co/jcTvpv/dust1.jpg');
+  background-repeat: repeat;
+  animation-duration: 600s;
+  // animation-duration: 10s;
+}
+
+#img-2 {
+  opacity: 0.10;
+  background: url('https://image.ibb.co/goU1Uv/dust2.jpg');
+  background-repeat: repeat;
+  animation-duration: 400s;
+  // animation-duration: 10s;
+}
+
+#img-3 {
+  opacity: 0.08;
+  background: url('https://image.ibb.co/cymRwa/dust3.jpg');
+  background-repeat: repeat;
+  animation-duration: 200s;
+  // animation-duration: 10s;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+      transform:translate(800vw, 800vh);
+  }
 }

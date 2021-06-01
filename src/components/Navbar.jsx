@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Navbar from "react-bootstrap/Navbar";
-import { mainBody, achievements, workEx, articles, repos, about, skills, publications } from "../editable-stuff/config.js";
+import { mainBody, achievements, workEx, articles, repos, about, skills, publications, getInTouch } from "../editable-stuff/config.js";
 import Nav from "react-bootstrap/Nav";
 // import { Link } from "react-router-dom";
 import { useScrollPosition } from "../hooks/useScrollPosition";
@@ -110,6 +110,15 @@ const Navigation = React.forwardRef((props, ref) => {
               href={process.env.PUBLIC_URL + "/#skills"}
             >
               Skills
+            </Nav.Link>
+          )}
+          {getInTouch.show && (
+            <Nav.Link
+              className={`nav-link lead ${
+        !isTop ? "navbartextwhite" : "navbartext"}`}
+              href={process.env.PUBLIC_URL + "/#getintouch"}
+            >
+              GetInTouch
             </Nav.Link>
           )}
           <Nav.Link
