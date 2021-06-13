@@ -15,9 +15,10 @@ const WorkEx = ({ heading, draupIcon, DNIcon, smIcon, fkIcon}) => {
             </Col>
             <Col md={7}>
                 <WorkExTemplate
-                  title="Incoming Software Development Engineer"
+                  title="Software Development Engineer"
                   company="Flipkart"
-                  startdate="June, 2021"
+                  startdate="June,2021"
+                  enddate="Present"
                   img={fkIcon}
                 />
                 <WorkExTemplate
