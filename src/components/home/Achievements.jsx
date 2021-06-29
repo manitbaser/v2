@@ -15,7 +15,7 @@ const Achievements = ({ heading, fkIcon, euIcon, tghIcon, woflramIcon, buIcon, A
             <Col>
                 <AchievementsTemplate
                   title1="GRiD 2.0"
-                  title2="National Finalist"
+                  title2="National Finalists"
                   title3="Flipkart"
                   link="https://d8it4huxumps7.cloudfront.net/uploads/certificates/flipkart_grid2/national_finalists_software-14.pdf"
                   img={fkIcon}
