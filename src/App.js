@@ -87,12 +87,12 @@ const Home = React.forwardRef((props, ref) => {
           username={articles.username}
         />
       )}
-      {skills.show && (
+      {/* {skills.show && (
         <Skills
           heading={skills.heading}
           hardSkills={skills.hardSkills}
         />
-      )}
+      )} */}
       {getInTouch.show && (
           <GetInTouch
             heading={getInTouch.heading}

@@ -52,7 +52,7 @@ const about = {
   imageLink: require("../editable-stuff/manitbaser.jpg"),
   imageSize: 375,
   message:
-    "My name is Manit Baser. I’m a final year undergraduate at Birla Institute of Technology and Science, Pilani, India, pursuing B.E. (Hons.) in Electrical and Electronics. I am intrigued by the applications of deep learning and software development to tackle real-world problems, and I am determined to continuously learn and grow and make the world a better place using my knowledge and experience.",
+    "My name is Manit Baser. I’m a Software Development Engineer at Flipkart and graduate of Birla Institute of Technology and Science, Pilani, India, where I pursued B.E. in Electrical and Electronics. I am intrigued by the applications of deep learning and software development to tackle real-world problems, and I am determined to continuously learn and grow and make the world a better place using my knowledge and experience.",
   resume: require("../editable-stuff/resume.pdf"),
 };
 
