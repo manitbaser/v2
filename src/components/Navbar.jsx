@@ -103,7 +103,7 @@ const Navigation = React.forwardRef((props, ref) => {
               Articles
             </Nav.Link>
           )}
-          {skills.show && (
+          {/* {skills.show && (
             <Nav.Link
               className={`nav-link lead ${
         !isTop ? "navbartextwhite" : "navbartext"}`}
@@ -111,7 +111,7 @@ const Navigation = React.forwardRef((props, ref) => {
             >
               Skills
             </Nav.Link>
-          )}
+          )} */}
           {getInTouch.show && (
             <Nav.Link
               className={`nav-link lead ${
